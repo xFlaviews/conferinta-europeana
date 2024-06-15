@@ -1,0 +1,51 @@
+@import 'bootstrap/scss/bootstrap';
+
+@import './fonts.scss';
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.autohide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    color: #ffffff;
+    background: rgb(27 38 79 / 87%);
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.text-primary {
+    color: rgb(255,255,255,1);
+}
+
+.text-secondary {
+    color: rgb(255,255,255,0.8);
+}
+
+.text-terciary {
+    color: rgb(255,255,255,0.46);
+}
+
+.text-exceptions {
+    color: rgb(255,255,255,0.46);
+}
+
+/* define Gilroy as default font */
+body {
+    font-family: 'Gilroy', sans-serif;
+    background: #1B264F;
+    background-color: #1B264F;
+}
