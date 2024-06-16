@@ -14,9 +14,9 @@
             </button>
             <div class="collapse navbar-collapse" id="main_nav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link link-light" href="#"> Informatii </a></li>
-                    <li class="nav-item"><a class="nav-link link-light" href="#"> Contacte </a></li>
-                    <li class="nav-item"><a class="nav-link link-light" href="#"> Limba </a></li>
+                    <li class="nav-item align-middle"><a class="nav-link link-light" href="#">Informatii</a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="#"><span>Contacte</a></li>
+                    <li class="nav-item"><a class="nav-link link-light" href="#"><span>Limba</a></li>
                 </ul>
             </div> <!-- navbar-collapse.// -->
         </div> <!-- container-fluid.// -->

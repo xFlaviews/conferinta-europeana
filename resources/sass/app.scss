@@ -16,7 +16,6 @@
     color: #ffffff;
     background: rgb(27 38 79 / 87%);
 }
-
 .scrolled-down {
     transform: translateY(-100%);
     transition: all 0.3s ease-in-out;
@@ -48,4 +47,22 @@ body {
     font-family: 'Gilroy', sans-serif;
     background: #1B264F;
     background-color: #1B264F;
+    color:#ffffff;
+}
+
+.heading-xxl{
+    font-size: 80px;
+    line-height: 130%;
+    letter-spacing: -1%;
+}
+.font-weight-semibold{
+font-weight: 600;
+}
+.letter-spacing-m{
+    letter-spacing: 0.25em;
+}
+.icon-container{
+width: 24px;
+height: 100%;
+vertical-align: middle;
 }
