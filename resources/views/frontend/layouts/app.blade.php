@@ -11,11 +11,7 @@
     @yield('meta')
 
     <!-- Icons -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css"
-    />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <!-- Fonts -->
 
     <!-- Styles -->
@@ -28,15 +24,13 @@
 
 <body>
     @include('frontend.includes.header')
-    <div class="container-fluid">
-        
 
-        <main>
-            @yield('content')
-        </main>
-        
-        @include('frontend.includes.footer')
-    </div><!--app-->
+
+    <main>
+        @yield('content')
+    </main>
+
+    @include('frontend.includes.footer')
 
     @stack('before-scripts')
     @vite(['resources/js/app.js'])

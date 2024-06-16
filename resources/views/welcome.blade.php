@@ -8,7 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
+        <!-- Icons -->
+        <link
+           rel="stylesheet"
+           type="text/css"
+           href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"
+         />
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
