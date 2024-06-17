@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Domains\Newsletter\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\NewsletterConsent;
 use App\Models\User;
+use App\Http\Controllers\Controller;
 
 class NewsletterController extends Controller
 {

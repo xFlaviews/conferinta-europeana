@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('newsletter_consents', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->nullable()->references('id')->on('users');
+            $table->foreignId('guest_id')->nullable()->references('id')->on('guests');
             $table->string('email')->unique();
+            $table->string('locale', 2)->default('ro');
             $table->boolean('consent');
             $table->dateTime('consent_data');
             $table->string('ip');

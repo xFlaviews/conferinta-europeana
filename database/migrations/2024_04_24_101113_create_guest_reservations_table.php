@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user_reservations', function (Blueprint $table) {
+        Schema::create('guest_reservations', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('guest_id')->references('id')->on('guests');
             $table->foreignId('reservation_id')->references('id')->on('reservations');
-            $table->foreignId('user_id')->references('id')->on('users');
             $table->date('checkin');
             $table->date('checkout');
             $table->decimal('room_price',8,2);
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_reservations');
+        Schema::dropIfExists('guest_reservations');
     }
 };

@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('hotel_id')->references('id')->on('hotels');
             $table->foreignId('room_id')->references('id')->on('rooms');
             $table->foreignId('main_user_id')->references('id')->on('users');
+            $table->integer('max_guests')->default('1');
             $table->decimal('price',8,2)->nullable();
             $table->date('checkin');
             $table->date('checkout');
