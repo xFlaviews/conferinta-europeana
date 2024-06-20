@@ -3,9 +3,10 @@
 namespace App\Domains\Newsletter\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\NewsletterConsent;
+use App\Models\Newsletter\NewsletterConsent;
 use App\Models\User;
 use App\Http\Controllers\Controller;
+use App\Models\Guest;
 
 class NewsletterController extends Controller
 {
@@ -15,53 +16,39 @@ class NewsletterController extends Controller
     // 
     public function registerEmailForNewsletter()
     {
-        //dd('test');
-        //dd($_GET);
         request()->validate([
-            'email' => ['required', 'email', 'min:10'],
-            'mario' => ['required','min:10']
+            'email' => ['required', 'email', 'max:255'],
         ]);
 
         $email = request('email');
 
         $userByEmail = User::where('email', $email)->first();
 
+        $guest = Guest::where('email', $email)->first();
+        
         $registerd = NewsletterConsent::updateOrCreate(
             [
                 'email' => $email,
             ],
             [
                 'user_id' => $userByEmail->id ?? null,
+                'guest_id' => $guest->id ?? null,
                 'consent' => true,
                 'consent_data' => now(),
                 'ip' => request()->ip()
             ]
         );
 
-
-
-        //dd(request()->ip());
-        $registerd = NewsletterConsent::updateOrCreate(
-            [
-                'email' => $email,
-            ],
-            [
-                #'user_id' => $userByEmail->id ?? null,
-                'consent' => true,
-                'consent_data' => now(),
-                'ip' => request()->ip()
-            ]
-        );
-        dd($registerd);
-        //return view('newsletter.success');
+        return redirect()->back()->with([
+            'messageSuccess' => __('Fai quello che vuoi con questo messaggio, poi dimmi dove metterlo quando va a bun fine ..')
+        ]);
     }
 
 
     public function unregisterEmailFromNewslettere()
     {
-        dd($_GET);
         request()->validate([
-            'email' => ['required', 'email']
+            'email' => ['required', 'email'],
         ]);
 
         $email = request('email');
@@ -72,8 +59,9 @@ class NewsletterController extends Controller
             $newsletterByEmail->consent = false;
             $newsletterByEmail->save();
         }
-
-        dd('success');
+        dd('da definire risposta');
         
     }
+
+    
 }

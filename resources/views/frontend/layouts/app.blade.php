@@ -26,7 +26,7 @@
     @include('frontend.includes.header')
 
 
-    <main>
+    <main data-bs-spy="scroll">
         @yield('content')
     </main>
 

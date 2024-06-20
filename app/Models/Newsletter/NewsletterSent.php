@@ -10,4 +10,12 @@ class NewsletterSent extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
+
+    public function consent() {
+        return $this->hasOne(NewsletterConsent::class);
+    }
+
+    public function content() {
+        return $this->hasOne(NewsletterContent::class);
+    }
 }

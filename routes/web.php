@@ -1,10 +1,10 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\NewsletterController;
+use App\Domains\Newsletter\Http\Controllers\NewsletterController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/newsletter', [NewsletterController::class, 'registerEmailForNewsletter']);
+Route::post('/newsletter', [NewsletterController::class, 'registerEmailForNewsletter'])->name('register_email_for_newsletter');
 Route::get('/delete-newsletter', [NewsletterController::class, 'unregisterEmailFromNewslettere']);
 
 Route::get('/', function () {
