@@ -253,5 +253,19 @@
     "Yes": "Yes",
     "You are receiving this email because we received a password reset request for your account.": "You are receiving this email because we received a password reset request for your account.",
     "You're logged in!": "You're logged in!",
-    "Your email address is unverified.": "Your email address is unverified."
+    "Your email address is unverified.": "Your email address is unverified.",
+    "Romanian": "Romanian",
+    "Italina": "Italina",
+    "English": "English",
+    "ro": "Romanian",
+    "it": "Italina",
+    "en": "English",
+    "Surname": "Surname",
+    "List": "List",
+    "Send to": "Send to",
+    "Subject": "Subject",
+    "To be sent from date": "To be sent from date",
+    "All": "All",
+    "Only guests": "Only guests",
+    "Only users": "Only users"
 }

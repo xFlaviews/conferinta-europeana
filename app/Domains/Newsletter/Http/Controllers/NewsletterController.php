@@ -7,6 +7,8 @@ use App\Models\Newsletter\NewsletterConsent;
 use App\Models\User;
 use App\Http\Controllers\Controller;
 use App\Models\Guest;
+use App\Models\Newsletter\NewsletterContent;
+use App\Models\Newsletter\NewsletterSent;
 
 class NewsletterController extends Controller
 {
@@ -25,7 +27,7 @@ class NewsletterController extends Controller
         $userByEmail = User::where('email', $email)->first();
 
         $guest = Guest::where('email', $email)->first();
-        
+
         $registerd = NewsletterConsent::updateOrCreate(
             [
                 'email' => $email,
@@ -55,13 +57,25 @@ class NewsletterController extends Controller
 
         $newsletterByEmail = NewsletterConsent::where('email', $email)->first();
 
-        if($newsletterByEmail) {
+        if ($newsletterByEmail) {
             $newsletterByEmail->consent = false;
             $newsletterByEmail->save();
         }
         dd('da definire risposta');
-        
     }
 
-    
+
+    public function index()
+    {
+        $newsletters = NewsletterContent::paginate();
+        return view('backend.pages.newsletter.index', [$newsletters]);
+    }
+
+    public function show(NewsletterContent $newsletterContent) {
+
+    }
+
+    public function create() {
+        return view('backend.pages.newsletter.create');
+    }
 }

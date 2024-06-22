@@ -255,5 +255,19 @@
     "Yes": "Da",
     "You are receiving this email because we received a password reset request for your account.": "Primiți acest mesaj pentru că a fost înregistrată o solicitare de resetare a parolei pentru contul asociat acestei adrese de e-mail.",
     "You're logged in!": "Ești autentificat!",
-    "Your email address is unverified.": "Adresa de e-mail este neverificată."
+    "Your email address is unverified.": "Adresa de e-mail este neverificată.",
+    "Romanian": "Română",
+    "Italina": "Italiană",
+    "English": "Engleză",
+    "ro": "Română",
+    "it": "Italiană",
+    "en": "Engleză",
+    "Surname": "Prenume",
+    "List": "Listă",
+    "Send to": "Trimite la",
+    "Subject": "Subiect",
+    "To be sent from date": "De trimis de la data",
+    "All": "Toți",
+    "Only guests": "Doar oaspeți",
+    "Only users": "Doar utilizatori"
 }

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->json('subject');
             $table->json('content');
-            $table->enum('for', ['guests', 'users', 'both'])->default('guests');
+            $table->enum('for', ['guests', 'users', 'all'])->default('guests');
             $table->boolean('to_be_sent')->default(false);
             $table->dateTime('start_sending_at')->nullable();
             $table->timestamps();
