@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
 
     @yield('css')
+    @vite('resources/js/plugins/notiflix.js')
     @vite(['resources/sass/backend/app.scss', 'resources/sass/backend/icons.scss'])
     @vite(['resources/js/backend/head.js', 'resources/js/backend/config.js'])
 </head>

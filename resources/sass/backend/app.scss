@@ -56,3 +56,7 @@ File: Main Css File
 
 // App Pages Plugins
 @import "plugins/fullcalendar";
+
+.nx-block-temporary-position {
+    min-height: unset !important;
+}

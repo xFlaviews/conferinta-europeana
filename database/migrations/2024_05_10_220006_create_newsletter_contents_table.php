@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('newsletter_contents', function (Blueprint $table) {
             $table->id();
             $table->json('subject');
-            $table->json('content');
+            $table->json('formatted_content');
+            $table->json('unformatted_content');
             $table->enum('for', ['guests', 'users', 'all'])->default('guests');
             $table->boolean('to_be_sent')->default(false);
             $table->dateTime('start_sending_at')->nullable();

@@ -255,10 +255,10 @@
     "You're logged in!": "You're logged in!",
     "Your email address is unverified.": "Your email address is unverified.",
     "Romanian": "Romanian",
-    "Italina": "Italina",
+    "Italian": "Italian",
     "English": "English",
     "ro": "Romanian",
-    "it": "Italina",
+    "it": "Italian",
     "en": "English",
     "Surname": "Surname",
     "List": "List",
@@ -267,5 +267,6 @@
     "To be sent from date": "To be sent from date",
     "All": "All",
     "Only guests": "Only guests",
-    "Only users": "Only users"
+    "Only users": "Only users",
+    "Enabled": "Enabled" 
 }

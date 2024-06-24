@@ -18,9 +18,9 @@
                 {{ $message }}
             </span>
         @enderror
-        @if (session('messageSuccess'))
+        @if (session('successMessage'))
             <div class="alert alert-success">
-                {{ session('messageSuccess') }}
+                {{ session('successMessage') }}
             </div>
         @endif
     </div>

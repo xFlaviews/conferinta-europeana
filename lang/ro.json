@@ -257,7 +257,7 @@
     "You're logged in!": "Ești autentificat!",
     "Your email address is unverified.": "Adresa de e-mail este neverificată.",
     "Romanian": "Română",
-    "Italina": "Italiană",
+    "Italian": "Italiană",
     "English": "Engleză",
     "ro": "Română",
     "it": "Italiană",
@@ -269,5 +269,6 @@
     "To be sent from date": "De trimis de la data",
     "All": "Toți",
     "Only guests": "Doar oaspeți",
-    "Only users": "Doar utilizatori"
+    "Only users": "Doar utilizatori",
+    "Enabled": "Activat" 
 }

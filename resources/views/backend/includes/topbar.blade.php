@@ -33,7 +33,7 @@
     <div class="relative">
         <button data-fc-type="dropdown" data-fc-placement="bottom-end" type="button" class="nav-link p-2 fc-dropdown">
             <span class="flex items-center justify-center h-6 w-6">
-                <img src="{{ Vite::asset('resources/images/backend/flags/'.app()->getLocale().'.jpg') }}" alt="user-image" class="h-4 w-6">
+                <img src="{{ Vite::asset('resources/images/backend/flags/'.app()->getLocale().'.jpg') }}" alt="locale image {{ app()->getLocale() }}" class="h-4 w-6">
             </span>
         </button>
         <div class="fc-dropdown fc-dropdown-open:opacity-100 hidden opacity-0 w-40 z-50 mt-2 transition-[margin,opacity] duration-300 bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 rounded-lg p-2">
@@ -41,7 +41,7 @@
                 @if(app()->getLocale() != $item)
                 <a href="{{ route('lang',['lang' => $item]) }}"
                     class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
-                    <img src="{{ Vite::asset('resources/images/backend/flags/'.$item.'.jpg') }}" alt="{{ __('language') . __($item) }}"
+                    <img src="{{ Vite::asset('resources/images/backend/flags/'.$item.'.jpg') }}" alt="{{ __('language'). ' ' . __($item) }}"
                         class="h-4">
                     <span class="align-middle">{{ __($item) }}</span>
                 </a>

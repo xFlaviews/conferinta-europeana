@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Guest;
 use App\Models\Newsletter\NewsletterContent;
 use App\Models\Newsletter\NewsletterSent;
+use Illuminate\Validation\Rule;
 
 class NewsletterController extends Controller
 {
@@ -42,7 +43,7 @@ class NewsletterController extends Controller
         );
 
         return redirect()->back()->with([
-            'messageSuccess' => __('Fai quello che vuoi con questo messaggio, poi dimmi dove metterlo quando va a bun fine ..')
+            'successMessage' => __('Fai quello che vuoi con questo messaggio, poi dimmi dove metterlo quando va a bun fine ..')
         ]);
     }
 
@@ -77,5 +78,20 @@ class NewsletterController extends Controller
 
     public function create() {
         return view('backend.pages.newsletter.create');
+    }
+
+    public function save() {
+        request()->validate([
+            'for' => ['required','string', Rule::in(['guests', 'users', 'all'])],
+            'start_sending_at' => ['required','date'],
+            'jubject' => ['required','array'],
+            'jubject.*' => ['required','string'],
+            'formatted_content' => ['array','required'],
+            'unformatted_content' => ['array','required'],
+            'to_be_sent' => ['sometimes', 'bool']
+        ]);
+        dd(request());
+
+        return redirect()->route('backend.newsletter.index')->with('successMessage',);
     }
 }

@@ -26,6 +26,8 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
 
 
             Route::get('/create',[NewsletterController::class, 'create'])->middleware('can:newsletter.create')->name('create');
+            
+            Route::post('/save',[NewsletterController::class, 'save'])->middleware('can:newsletter.create')->name('save');
         });
     });
 });

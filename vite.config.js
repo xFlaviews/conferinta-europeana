@@ -7,6 +7,11 @@ export default defineConfig({
             input: [
                 'resources/sass/app.scss',
                 'resources/js/app.js',
+                'resources/js/plugins/notiflix.js',
+                
+                //grapesjs
+                'resources/sass/backend/plugins/grapesjs.scss',
+                'resources/js/backend/plugins/grapesjs.js',
 
                 // backend
 
