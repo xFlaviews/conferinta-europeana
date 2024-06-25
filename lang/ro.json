@@ -270,5 +270,8 @@
     "All": "Toți",
     "Only guests": "Doar oaspeți",
     "Only users": "Doar utilizatori",
-    "Enabled": "Activat" 
+    "Enabled": "Activat",
+    "Created at": "Creat la",
+    "Updated at": "Actualizat la",
+    "Contacts": "Contacte"
 }

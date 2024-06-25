@@ -45,11 +45,13 @@
                                 <span class="menu-text">{{ __('List') }}</span>
                             </a>
                         </li>
+                        @can('newsletter.create')
                         <li class="menu-item">
                             <a href="{{ route('backend.newsletter.create') }}" class="menu-link">
                                 <span class="menu-text"> {{ __('Create') }} </span>
                             </a>
                         </li>
+                        @endcan
                     </ul>
                 </li>
             @endcan

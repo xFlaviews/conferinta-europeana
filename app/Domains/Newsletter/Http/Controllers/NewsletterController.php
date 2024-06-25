@@ -69,7 +69,9 @@ class NewsletterController extends Controller
     public function index()
     {
         $newsletters = NewsletterContent::paginate();
-        return view('backend.pages.newsletter.index', [$newsletters]);
+        return view('backend.pages.newsletter.index', [
+            "newsletters" => $newsletters
+        ]);
     }
 
     public function show(NewsletterContent $newsletterContent) {
@@ -84,13 +86,30 @@ class NewsletterController extends Controller
         request()->validate([
             'for' => ['required','string', Rule::in(['guests', 'users', 'all'])],
             'start_sending_at' => ['required','date'],
-            'jubject' => ['required','array'],
-            'jubject.*' => ['required','string'],
+            'subject' => ['required','array'],
+            "subject.ro" => ['required','string'],
             'formatted_content' => ['array','required'],
             'unformatted_content' => ['array','required'],
-            'to_be_sent' => ['sometimes', 'bool']
+            'to_be_sent' => ['sometimes']
         ]);
-        dd(request());
+
+        $subject = [];
+        foreach (request('subject') as $key => $value) {
+            if(!empty($value)) {
+                $subject[$key] = $value;
+            }
+        }
+
+        $toBeSent = request('to_be_sent') == 'on';
+        //dd(json_encode($subject));
+        $newsletterContent = NewsletterContent::create([
+            'for' => request('for'),
+            'start_sending_at' => request('start_sending_at'),
+            'subject' => $subject,
+            'formatted_content' => request('formatted_content'),
+            'unformatted_content' => request('unformatted_content'),
+            'to_be_sent' => $toBeSent
+        ]);
 
         return redirect()->route('backend.newsletter.index')->with('successMessage',);
     }

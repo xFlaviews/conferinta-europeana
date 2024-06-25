@@ -268,5 +268,8 @@
     "All": "All",
     "Only guests": "Only guests",
     "Only users": "Only users",
-    "Enabled": "Enabled" 
+    "Enabled": "Enabled",
+    "Created at": "Created at",
+    "Updated at": "Updated at",
+    "Contacts": "Contacts"
 }
