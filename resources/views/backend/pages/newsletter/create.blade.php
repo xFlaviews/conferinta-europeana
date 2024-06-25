@@ -35,8 +35,6 @@
                     </div>
                 </div>
             </div>
-            @dump($errors)
-            @dump(old())
             <div class="p-6">
                 <div class="grid lg:grid-cols-2 gap-6">
                     <div class="form-group">
