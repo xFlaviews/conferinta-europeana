@@ -268,8 +268,16 @@
     "All": "Tutti",
     "Only guests": "Solo ospiti",
     "Only users": "Solo utenti",
+    "all": "Tutti",
+    "guests": "Solo ospiti",
+    "users": "Solo utenti",
     "Enabled": "Attiva",
     "Created at": "Creato il",
     "Updated at": "Aggiornato il",
-    "Contacts": "Contatti"
+    "Contacts": "Contatti",
+    "unsubscribe_word": "annullare l'iscrizione",
+    "unsubscribe_before": "Se non volete piu ricevere email premere quanto segue:",
+    "unsubscribe_after": "per procedere alla cancellazione dell'iscrizione",
+    "You have successfully unsubscribed": "La disiscrizione è avvenuta con successo",
+    "You have successfully subscribed to the newsletter": "L'iscrizione alla newsletter è avvenuta con successo"
 }

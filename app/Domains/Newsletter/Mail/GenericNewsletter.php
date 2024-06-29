@@ -2,6 +2,7 @@
 
 namespace App\Domains\Newsletter\Mail;
 
+use App\Domains\Newsletter\Http\NewsletterTrait;
 use App\Models\Newsletter\NewsletterConsent;
 use App\Models\Newsletter\NewsletterContent;
 use App\Models\Newsletter\NewsletterSent;
@@ -15,6 +16,7 @@ use Illuminate\Queue\SerializesModels;
 class GenericNewsletter extends Mailable
 {
     use Queueable, SerializesModels;
+    use NewsletterTrait;
 
     public NewsletterSent $newsletterToSend;
     public NewsletterContent $content;
@@ -28,6 +30,8 @@ class GenericNewsletter extends Mailable
         $this->newsletterToSend = $newsletterToSend;
         $this->content = $newsletterToSend->content;
         $this->consent = $newsletterToSend->consent;
+        $this->to($this->consent->email);
+        $this->from(config('mail.from.address'), config('mail.from.name'));
         setAllLocale($this->consent->locale);
     }
 
@@ -46,8 +50,10 @@ class GenericNewsletter extends Mailable
      */
     public function content(): Content
     {
+        $htmlContent = $this->content->formatted_content;
+        $htmlContent = $this->replaceSpecialStrings($htmlContent, $this->consent);
         return new Content(
-            view: 'view.name',
+            htmlString: $htmlContent,
         );
     }
 

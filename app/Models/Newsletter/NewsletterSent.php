@@ -12,10 +12,10 @@ class NewsletterSent extends Model
     protected $guarded = ['id'];
 
     public function consent() {
-        return $this->hasOne(NewsletterConsent::class);
+        return $this->belongsTo(NewsletterConsent::class, 'newsletter_consent_id', 'id');
     }
 
     public function content() {
-        return $this->hasOne(NewsletterContent::class);
+        return $this->belongsTo(NewsletterContent::class, 'newsletter_content_id', 'id');
     }
 }

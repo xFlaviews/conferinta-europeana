@@ -20,7 +20,7 @@ class App {
         const mybutton = document.querySelector('[data-toggle="back-to-top"]');
 
         window.addEventListener('scroll', function () {
-            if (window.pageYOffset > 72) {
+            if (window.scrollY > 72) {
                 mybutton.classList.add('flex');
                 mybutton.classList.remove('hidden');
 

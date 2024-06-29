@@ -16,7 +16,7 @@
 </head>
 
 <body>
-
+    @yield('modals')
     <div class="flex wrapper">
 
         @include('backend.includes/sidebar')
@@ -25,11 +25,12 @@
 
             @include('backend.includes/topbar')
 
+
             <main class="flex-grow p-6">
 
                 @include('backend.includes/page-title', [
                     'title' => $title,
-                    'sub_title' => $sub_title ?? null
+                    'sub_title' => $sub_title ?? null,
                 ])
 
                 @yield('content')

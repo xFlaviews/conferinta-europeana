@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('newsletter_sents', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('newsletter_content_id')->references('id')->on('newsletter_contents');
-            $table->foreignId('newsletter_consent_id')->references('id')->on('newsletter_consents');
+            $table->foreignId('newsletter_content_id')->references('id')->on('newsletter_contents')->onDelete('cascade');
+            $table->foreignId('newsletter_consent_id')->references('id')->on('newsletter_consents')->onDelete('cascade');
             $table->dateTime('to_be_sent_at');
             $table->boolean('was_sent')->default(false);
             $table->unique(['newsletter_content_id','newsletter_consent_id'],'unique_content_consent_key');

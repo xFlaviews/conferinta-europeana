@@ -1,5 +1,5 @@
 @extends('backend.layouts.vertical', [
-    'title' => __('Create'),
+    'title' => __('Edit'),
     'sub_title' => 'Newsletter',
     'sub_url' => route('backend.newsletter.index'),
     'mode' => $mode ?? '',
@@ -15,7 +15,7 @@
         $allLocales = getAllLocales();
     @endphp
 
-    <form method="POST" id="form-submit-newsletter" action="{{ route('backend.newsletter.save') }}"
+    <form method="POST" id="form-submit-newsletter" action="{{ route('backend.newsletter.update', $newsletterContent->id) }}"
         class="form-submit-newsletter">
         @csrf
         <div class="flex flex-col gap-6">
@@ -24,7 +24,7 @@
                     <div class="flex justify-between items-center">
                         <div class="flex items-center mauto">
                             <input type="checkbox" id="to_be_sent" class="form-switch text-success" name="to_be_sent"
-                                {{ old('to_be_sent') ? 'checked' : null }}>
+                                {{ $newsletterContent->to_be_sent ? 'checked' : null }}>
                             <label for="to_be_sent" class="ms-1.5">
                                 {{ __('Disable') }} / {{ __('Enable') }}
                             </label>
@@ -33,7 +33,7 @@
                             <button type="submit"
                                 class="btn border-primary text-primary hover:bg-primary hover:text-white">
                                 <i class="mgc_save_2_line text-base me-4"></i>
-                                {{ __('Create') }}
+                                {{ __('Save') }}
                             </button>
                         </div>
                     </div>
@@ -45,12 +45,12 @@
                                 {{ __('Send to') }}
                             </label>
                             <select id="inputState" class="form-input" name="for" required>
-                                <option value="guests" {{ old('for') == 'guests' ? 'selected' : 'selected' }}>
+                                <option value="guests" {{ $newsletterContent->for == 'guests' ? 'selected' : 'selected' }}>
                                     {{ __('Only guests') }}</option>
-                                <option value="users" {{ old('for') == 'users' ? 'selected' : null }}>
+                                <option value="users" {{ $newsletterContent->for == 'users' ? 'selected' : null }}>
                                     {{ __('Only users') }}</option>
-                                <option value="all" {{ old('for') == 'all' ? 'selected' : null }}>{{ __('All') }}
-                                </option>
+                                <option value="all" {{ $newsletterContent->for == 'all' ? 'selected' : null }}>
+                                    {{ __('All') }}</option>
                             </select>
                         </div>
                         <div>
@@ -58,7 +58,7 @@
                                 {{ __('To be sent from date') }}
                             </label>
                             <input type="datetime-local" class="form-input" id="start_sending_at" name="start_sending_at"
-                                value="{{ now()->add('2d') }}">
+                                value="{{ $newsletterContent->start_sending_at }}">
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                                         <input type="text" placeholder="{{ __('Subject') }}"
                                             name="subject[{{ $locale }}]" id="subject_{{ $locale }}"
                                             class="form-input @error("subject.$locale") border-red-500 focus:border-red-500 text-red-700 @enderror"
-                                            value="{{ old('subject' . $locale) }}">
+                                            value="{{ $newsletterContent->getTranslation('subject', $locale) }}">
                                         @error("subject.$locale")
                                             <p class="text-xs text-red-600 mt-2">
                                                 {{ str_replace("subject.$locale", __('Subject'), $message) }}</p>
@@ -105,10 +105,7 @@
                                     <input type="hidden" id="unformatted_content_{{ $locale }}"
                                         name="unformatted_content[{{ $locale }}]">
                                     <div id="gjs-{{ $locale }}-editor" class="border">
-                                        {!! old(
-                                            "unformatted_content.$locale",
-                                            '<mjml><mj-body><mj-section><mj-column><mj-text>New Newsletter</mj-text></mj-column></mj-section><mj-section padding-top="0px" padding-bottom="0px"><mj-column padding-top="0px" padding-bottom="0px"><mj-text font-size="11px" align="center">@{{unsubscribe_content}}</mj-text></mj-column></mj-section></mj-body></mjml>',
-                                        ) !!}
+                                        {!! $newsletterContent->getTranslation('unformatted_content', $locale) !!}
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +122,7 @@
 @endsection
 
 @section('script-bottom')
-    <script type="text/javascript" defer>
+    <script type="text/javascript">
         let editors = [];
 
         document.getElementById('form-submit-newsletter').addEventListener('keydown', function(event) {
@@ -135,7 +132,6 @@
         });
 
         document.getElementById('form-submit-newsletter').addEventListener('submit', function(event) {
-
             event.preventDefault(); // Previene l'invio del form
             Block.hourglass('.form-submit-newsletter');
 
@@ -149,7 +145,7 @@
                 insertValue(locale{{ $locale }}, unformattedContent{{ $locale }},
                     formattedContent{{ $locale }});
             @endforeach
-
+            
             this.submit();
         });
 

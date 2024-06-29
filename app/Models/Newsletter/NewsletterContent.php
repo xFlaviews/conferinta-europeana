@@ -12,5 +12,6 @@ class NewsletterContent extends Model
     use HasTranslations;
     
     protected $guarded = ['id'];
+    
     public $translatable = ['subject', 'formatted_content','unformatted_content'];
 }

@@ -268,8 +268,16 @@
     "All": "All",
     "Only guests": "Only guests",
     "Only users": "Only users",
+    "all": "All",
+    "guests": "Only guests",
+    "users": "Only users",
     "Enabled": "Enabled",
     "Created at": "Created at",
     "Updated at": "Updated at",
-    "Contacts": "Contacts"
+    "Contacts": "Contacts",
+    "unsubscribe_word": "unsubscribe",
+    "unsubscribe_before": "If you no longer wish to receive e-mails, please press the following:",
+    "unsubscribe_after": "to proceed with the unsubscription",
+    "You have successfully unsubscribed": "You have successfully unsubscribed",
+    "You have successfully subscribed to the newsletter": "You have successfully subscribed to the newsletter"
 }

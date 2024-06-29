@@ -270,8 +270,16 @@
     "All": "Toți",
     "Only guests": "Doar oaspeți",
     "Only users": "Doar utilizatori",
+    "all": "Toți",
+    "guests": "Doar oaspeți",
+    "users": "Doar utilizatori",
     "Enabled": "Activat",
     "Created at": "Creat la",
     "Updated at": "Actualizat la",
-    "Contacts": "Contacte"
+    "Contacts": "Contacte",
+    "unsubscribe_word": "dezabonare",
+    "unsubscribe_before": "Dacă nu mai doriți să primiți e-mailuri, vă rugăm să apăsați următorul link:",
+    "unsubscribe_after": "pentru a continua cu dezabonarea",
+    "You have successfully unsubscribed": "Ați renunțat la abonament",
+    "You have successfully subscribed to the newsletter": "V-ați abonat cu succes la buletinul informativ"
 }

@@ -8,4 +8,4 @@ Route::get('/', function () {
 })->name('frontend.index');
 
 Route::post('/newsletter', [NewsletterController::class, 'registerEmailForNewsletter'])->name('register_email_for_newsletter');
-Route::get('/delete-newsletter', [NewsletterController::class, 'unregisterEmailFromNewslettere']);
+Route::get('/delete-newsletter', [NewsletterController::class, 'unregisterEmailFromNewsletter'])->name('unregister_email_for_newsletter');
