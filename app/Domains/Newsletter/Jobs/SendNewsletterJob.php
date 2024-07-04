@@ -31,12 +31,16 @@ class SendNewsletterJob implements ShouldQueue
         //
         $newsletterToSend = NewsletterSent::where('was_sent',false)->first();
         if($newsletterToSend) {
+            dump(now() >= $newsletterToSend->to_be_sent_at);
+            dump(now());
+            dump($newsletterToSend->to_be_sent_at);
             if(now() >= $newsletterToSend->to_be_sent_at) {
                 Mail::send(new GenericNewsletter($newsletterToSend));
                 $newsletterToSend->was_sent = true;
                 $newsletterToSend->save();
             }
+            dd($newsletterToSend);
         }
-    
+        
     }
 }

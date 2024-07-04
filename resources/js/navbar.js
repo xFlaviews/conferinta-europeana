@@ -25,5 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             last_scroll_top = scroll_top;
         });
+
+        // Add event listener for button click
+        var toggleButton = document.querySelector(".navbar-toggler");
+        toggleButton.addEventListener("click", function () {
+            el_autohide.classList.toggle("menu-opened");
+        });
     }
 });

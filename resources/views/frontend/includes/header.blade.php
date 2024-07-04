@@ -26,7 +26,7 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link link-light dropdown-toggle dropdown-toggle-no" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link  d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="ph ph-translate"></i>Română<i class="ph ph-caret-down"></i>
                         </a>
@@ -38,8 +38,6 @@
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </li>
-                </ul>
             </div> <!-- navbar-collapse.// -->
         </div> <!-- container-fluid.// -->
     </nav>
