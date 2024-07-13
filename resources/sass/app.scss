@@ -4,6 +4,10 @@
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    border: none !important;
+    height: 24px;
+    width: 24px;
+    padding: unset;
 }
 
 .nx-block-temporary-position {
@@ -31,7 +35,7 @@
 }
 
 .navbar-logo-text {
-    display: none;
+    font-size:12px;
     letter-spacing: 0.175rem;
 }
 
@@ -97,7 +101,8 @@ body {
 }
 .custom-search-input {
     width: 100%;
-    border: 1px solid #ccc;
+    border: none;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 80%);
     border-radius: 100px;
     padding: 20px 20px 20px 20px;
     line-height: 1;
@@ -107,14 +112,15 @@ body {
 .custom-search-botton {
     height: 52px;
     position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 80%);
     background: #1b264f;
     color: #fff;
     outline: none;
     margin: 0;
     border-radius: 100px;
     z-index: 2;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
+    border: none !important;
     width: 100%;
 }
 
@@ -170,11 +176,13 @@ body {
         right: 4px;
         bottom: 4px;
         margin-top: 0;
-        border: none;
         width: fit-content;
+        box-shadow: none !important;
+        border: none !important;
     }
 
     .navbar-logo-text {
+        font-size:1rem;
         display: block;
     }
 
@@ -209,7 +217,27 @@ body {
     color: #1b264f;
 }
 
-@include media-breakpoint-up(md) {
+#language {
+    display: none !important;
+}
+
+#faq {
+    display: block !important;
+}
+#contacte {
+    display: none !important;
+}
+#informatii a {
+    justify-content: space-between;
+}
+.navbar-toggler.nvabar-button-no-shadow {
+    padding: 0;
+    border: none !important;
+}
+@include media-breakpoint-up(lg) {
+    #faq {
+        display: none !important;
+    }
     .autohide {
         padding: 0 3rem;
     }
@@ -222,6 +250,13 @@ body {
         background-color: #e7e5da;
         padding-left: 5rem;
         padding-right: 5rem;
+    }
+
+    #language {
+        display: block !important;
+    }
+    #contacte {
+        display: block !important;
     }
 }
 .gray-text {
@@ -240,6 +275,9 @@ body {
 }
 h6 {
     font-size: 12px;
+}
+.gap-6-sm{
+    gap:6rem;
 }
 @include media-breakpoint-up(sm) {
     .gap-6 {
@@ -297,7 +335,8 @@ h6 {
     width: 364px;
     height: 224px;
     top: 50%;
-    transform: translate(0, -50%);
+    right: 0;
+    transform: translate(25%, -50%);
     background-color: #fce8c3;
     z-index: -1;
 }
@@ -471,8 +510,29 @@ a {
 }
 .faq-items {
     padding: 24px 0; /* Vertical padding */
-    border-bottom:1px solid rgba(255, 255, 255, 0.2); /* Single border between items */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Single border between items */
 }
 .faq-items:first-child {
-    border-top:1px solid rgba(255, 255, 255, 0.2); /* Top border for the first item */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Top border for the first item */
+}
+.header-title h2 {
+    font-size: 24px;
+}
+
+.menu-opened .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' d='M5 5L25 25M25 5L5 25'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        gap: 0 !important;
+    }
+    .navbar-nav i:first-of-type {
+        display: none;
+    }
+    .navbar-nav a {
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 1.25rem 0;
+    }
 }

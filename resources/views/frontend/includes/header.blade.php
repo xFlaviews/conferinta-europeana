@@ -15,19 +15,24 @@
             </button>
             <div class="collapse navbar-collapse" id="main_nav">
                 <ul class="navbar-nav ms-auto d-flex gap-4">
-                    <li class="nav-item">
+                    <li class="nav-item" id="informatii">
                         <a class="nav-link link-light d-flex gap-2" href="#info-section">
                             <i class="ph ph-book-open"></i>Informatii<i class="ph ph-caret-down"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="contacte">
                         <a class="nav-link link-light d-flex gap-2" href="#contacts-section">
                             <i class="ph ph-phone"></i>Contacte
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link  d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                     <li class="nav-item" id="faq">
+                        <a class="nav-link link-light d-flex gap-2" href="#contacts-section">
+                            <i class="ph ph-phone"></i>Faq
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown" id="language">
+                        <a class="nav-link  d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="ph ph-translate"></i>Română<i class="ph ph-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu">
@@ -38,7 +43,13 @@
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-            </div> <!-- navbar-collapse.// -->
+                        </li>
+                       
+                       <div class="mt-5 mb-3 d-flex justify-content-between ">
+                       <div> 
+                       Ro <i class="ph ph-caret-down"></i></div>
+                        <div>Contacte</div>
+                       </div>
         </div> <!-- container-fluid.// -->
     </nav>
 </header>

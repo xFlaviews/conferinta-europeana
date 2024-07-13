@@ -68,14 +68,14 @@
 
 
         <div class="d-flex row px-0 px-md-5 mt-3  justify-content-center justify-content-lg-between">
-            <div class="col-10 col-lg-5 mb-5 order-2">
+            <div class="col-10 col-lg-5 mb-5 order-1 order-sm-2">
                 <div class="position-relative container-wrapper">
                     <div class="card position-absolute behind top-left w-100 h-100"></div>
                     <div class="card position-absolute behind bottom-right  w-25 h-75"></div>
                     <div class="card position-relative main-img theme-img w-100"></div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 text-start order-1 text-start text-lg-end mb-5">
+            <div class="col-12 col-lg-6 text-start order-2 order-lg-1 text-start text-lg-end mb-5">
                 <div class="mb-3 accent-text">TEMATICĂ</div>
                 <div>
                     <h1 class="fw-bold mb-4">Tematica anului acesta</h1>
@@ -137,7 +137,7 @@
         <div class="d-flex row px-0 px-md-5 mt-3  justify-content-center justify-content-lg-between">
          <img src="{{ Vite::asset('resources/images/radial-circle.svg') }}" alt="Logo"
                 class="position-absolute w-75 left-radialBg"/>
-            <div class="col-10 col-lg-5 mb-5 order-2">
+            <div class="col-10 col-lg-5 mb-5 order-1 order-sm-2">
                 <div class="position-relative container-wrapper">
                     <div class="card position-absolute behind top-left w-100 h-100"></div>
                     <div class="card position-absolute behind bottom-right  w-25 h-75"></div>
@@ -149,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 text-start order-1 text-start text-lg-end mb-5">
+            <div class="col-12 col-lg-6 text-start order-2 order-sm-1 text-start text-lg-end mb-5">
                 <div class="mb-3 accent-text">ZILELE</div>
                 <div>
                     <h1 class="fw-bold mb-4">ZILELE CONFERINȚEI</h1>

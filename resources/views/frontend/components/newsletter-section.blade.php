@@ -1,8 +1,8 @@
 <section class="min-vh-100 justify-content-center d-flex align-items-center mb-5 bgimg" id="newsletter-section">
 
-    <div class="align-items-center d-flex flex-column justify-content-center text-center   col-10">
-        <div>
-            <h1 class="display-1 fw-bold">CONFERINTA EUROPEANĂ</h1>
+    <div class="align-items-center d-flex flex-column justify-content-center text-center col-10">
+        <div class="header-title">
+            <h1 class="display-1 fw-bold mb-3 mb-lg-0">Conferința Europeană</h1>
             <h2 class="fw-bolder letter-spacing-m">DE TINERET ȘI FAMILII</h2>
         </div>
         <div class="custom-search col-12 col-md-10 col-lg-6 mt-5">
