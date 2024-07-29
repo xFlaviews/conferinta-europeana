@@ -1,0 +1,686 @@
+{
+  "__commonjsHelpers-BosuxZz1.js": {
+    "file": "assets/_commonjsHelpers-BosuxZz1.js",
+    "name": "_commonjsHelpers"
+  },
+  "_apexcharts.common-BWi2c-AX.js": {
+    "file": "assets/apexcharts.common-BWi2c-AX.js",
+    "name": "apexcharts.common",
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "_glightbox.min-DJeyUJsX.js": {
+    "file": "assets/glightbox.min-DJeyUJsX.js",
+    "name": "glightbox.min",
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "_isObject-DB8w6JNV.js": {
+    "file": "assets/isObject-DB8w6JNV.js",
+    "name": "isObject"
+  },
+  "_popper-Bnif2dgu.js": {
+    "file": "assets/popper-Bnif2dgu.js",
+    "name": "popper"
+  },
+  "_sortable.esm-C0-Qcoum.js": {
+    "file": "assets/sortable.esm-C0-Qcoum.js",
+    "name": "sortable.esm"
+  },
+  "node_modules/@simonwep/pickr/dist/themes/classic.min.css": {
+    "file": "assets/classic-CLkSh__0.css",
+    "src": "node_modules/@simonwep/pickr/dist/themes/classic.min.css",
+    "isEntry": true
+  },
+  "node_modules/@simonwep/pickr/dist/themes/monolith.min.css": {
+    "file": "assets/monolith-CizjDgRC.css",
+    "src": "node_modules/@simonwep/pickr/dist/themes/monolith.min.css",
+    "isEntry": true
+  },
+  "node_modules/@simonwep/pickr/dist/themes/nano.min.css": {
+    "file": "assets/nano-BII7yHqA.css",
+    "src": "node_modules/@simonwep/pickr/dist/themes/nano.min.css",
+    "isEntry": true
+  },
+  "node_modules/animate.css/animate.compat.css": {
+    "file": "assets/animate-CM8rMdIj.css",
+    "src": "node_modules/animate.css/animate.compat.css",
+    "isEntry": true
+  },
+  "node_modules/animate.css/animate.min.css": {
+    "file": "assets/animate-Dm7KJ1dy.css",
+    "src": "node_modules/animate.css/animate.min.css",
+    "isEntry": true
+  },
+  "node_modules/dropzone/dist/dropzone-min.js": {
+    "file": "assets/dropzone-min-B4FkjIMX.js",
+    "name": "dropzone-min",
+    "src": "node_modules/dropzone/dist/dropzone-min.js",
+    "isEntry": true
+  },
+  "node_modules/dropzone/dist/dropzone.css": {
+    "file": "assets/dropzone-l2B6aAdZ.css",
+    "src": "node_modules/dropzone/dist/dropzone.css",
+    "isEntry": true
+  },
+  "node_modules/flatpickr/dist/flatpickr.min.css": {
+    "file": "assets/flatpickr-BArvkMiJ.css",
+    "src": "node_modules/flatpickr/dist/flatpickr.min.css",
+    "isEntry": true
+  },
+  "node_modules/glightbox/dist/css/glightbox.min.css": {
+    "file": "assets/glightbox-CoUS6R41.css",
+    "src": "node_modules/glightbox/dist/css/glightbox.min.css",
+    "isEntry": true
+  },
+  "node_modules/gridjs/dist/theme/mermaid.min.css": {
+    "file": "assets/mermaid-Uc6Sw9t5.css",
+    "src": "node_modules/gridjs/dist/theme/mermaid.min.css",
+    "isEntry": true
+  },
+  "node_modules/jsvectormap/dist/jsvectormap.min.css": {
+    "file": "assets/jsvectormap-DVKW2hOC.css",
+    "src": "node_modules/jsvectormap/dist/jsvectormap.min.css",
+    "isEntry": true
+  },
+  "node_modules/nice-select2/dist/css/nice-select2.css": {
+    "file": "assets/nice-select2-zwuzBcPq.css",
+    "src": "node_modules/nice-select2/dist/css/nice-select2.css",
+    "isEntry": true
+  },
+  "node_modules/nouislider/dist/nouislider.min.css": {
+    "file": "assets/nouislider-Cx-BHaEU.css",
+    "src": "node_modules/nouislider/dist/nouislider.min.css",
+    "isEntry": true
+  },
+  "node_modules/plyr/dist/plyr.css": {
+    "file": "assets/plyr-CXfayCZ3.css",
+    "src": "node_modules/plyr/dist/plyr.css",
+    "isEntry": true
+  },
+  "node_modules/quill/dist/quill.bubble.css": {
+    "file": "assets/quill-CAnTRXUp.css",
+    "src": "node_modules/quill/dist/quill.bubble.css",
+    "isEntry": true
+  },
+  "node_modules/quill/dist/quill.core.css": {
+    "file": "assets/quill-BjDruDbT.css",
+    "src": "node_modules/quill/dist/quill.core.css",
+    "isEntry": true
+  },
+  "node_modules/quill/dist/quill.snow.css": {
+    "file": "assets/quill-BvFojYd1.css",
+    "src": "node_modules/quill/dist/quill.snow.css",
+    "isEntry": true
+  },
+  "node_modules/shepherd.js/dist/css/shepherd.css": {
+    "file": "assets/shepherd-MKuLJgWe.css",
+    "src": "node_modules/shepherd.js/dist/css/shepherd.css",
+    "isEntry": true
+  },
+  "node_modules/sweetalert2/dist/sweetalert2.min.css": {
+    "file": "assets/sweetalert2-BJt9XWBu.css",
+    "src": "node_modules/sweetalert2/dist/sweetalert2.min.css",
+    "isEntry": true
+  },
+  "node_modules/swiper/swiper-bundle.min.css": {
+    "file": "assets/swiper-bundle-D_JgF5ni.css",
+    "src": "node_modules/swiper/swiper-bundle.min.css",
+    "isEntry": true
+  },
+  "node_modules/tippy.js/dist/tippy.css": {
+    "file": "assets/tippy-LriLsbSV.css",
+    "src": "node_modules/tippy.js/dist/tippy.css",
+    "isEntry": true
+  },
+  "resources/fonts/Gilroy-Black.ttf": {
+    "file": "assets/Gilroy-Black-CUfVRAQt.ttf",
+    "src": "resources/fonts/Gilroy-Black.ttf"
+  },
+  "resources/fonts/Gilroy-BlackItalic.ttf": {
+    "file": "assets/Gilroy-BlackItalic-cjNLRx1R.ttf",
+    "src": "resources/fonts/Gilroy-BlackItalic.ttf"
+  },
+  "resources/fonts/Gilroy-Bold.ttf": {
+    "file": "assets/Gilroy-Bold-yXpx-Icw.ttf",
+    "src": "resources/fonts/Gilroy-Bold.ttf"
+  },
+  "resources/fonts/Gilroy-BoldItalic.ttf": {
+    "file": "assets/Gilroy-BoldItalic-Coca13HG.ttf",
+    "src": "resources/fonts/Gilroy-BoldItalic.ttf"
+  },
+  "resources/fonts/Gilroy-ExtraBold.ttf": {
+    "file": "assets/Gilroy-ExtraBold-C3mOj7sV.ttf",
+    "src": "resources/fonts/Gilroy-ExtraBold.ttf"
+  },
+  "resources/fonts/Gilroy-ExtraBoldItalic.ttf": {
+    "file": "assets/Gilroy-ExtraBoldItalic-BlFqS295.ttf",
+    "src": "resources/fonts/Gilroy-ExtraBoldItalic.ttf"
+  },
+  "resources/fonts/Gilroy-Heavy.ttf": {
+    "file": "assets/Gilroy-Heavy-t3dJdMAr.ttf",
+    "src": "resources/fonts/Gilroy-Heavy.ttf"
+  },
+  "resources/fonts/Gilroy-HeavyItalic.ttf": {
+    "file": "assets/Gilroy-HeavyItalic-Cev53BwC.ttf",
+    "src": "resources/fonts/Gilroy-HeavyItalic.ttf"
+  },
+  "resources/fonts/Gilroy-Light.ttf": {
+    "file": "assets/Gilroy-Light-DVwvzZ-0.ttf",
+    "src": "resources/fonts/Gilroy-Light.ttf"
+  },
+  "resources/fonts/Gilroy-LightItalic.ttf": {
+    "file": "assets/Gilroy-LightItalic-DtyHPyQI.ttf",
+    "src": "resources/fonts/Gilroy-LightItalic.ttf"
+  },
+  "resources/fonts/Gilroy-Medium.ttf": {
+    "file": "assets/Gilroy-Medium-D7PbV1sv.ttf",
+    "src": "resources/fonts/Gilroy-Medium.ttf"
+  },
+  "resources/fonts/Gilroy-MediumItalic.ttf": {
+    "file": "assets/Gilroy-MediumItalic-Dn3kP8D5.ttf",
+    "src": "resources/fonts/Gilroy-MediumItalic.ttf"
+  },
+  "resources/fonts/Gilroy-Regular.ttf": {
+    "file": "assets/Gilroy-Regular-D-tpQJef.ttf",
+    "src": "resources/fonts/Gilroy-Regular.ttf"
+  },
+  "resources/fonts/Gilroy-RegularItalic.ttf": {
+    "file": "assets/Gilroy-RegularItalic-hORoWKIa.ttf",
+    "src": "resources/fonts/Gilroy-RegularItalic.ttf"
+  },
+  "resources/fonts/Gilroy-SemiBold.ttf": {
+    "file": "assets/Gilroy-SemiBold-Rj2UL15y.ttf",
+    "src": "resources/fonts/Gilroy-SemiBold.ttf"
+  },
+  "resources/fonts/Gilroy-SemiBoldItalic.ttf": {
+    "file": "assets/Gilroy-SemiBoldItalic-CFg7est1.ttf",
+    "src": "resources/fonts/Gilroy-SemiBoldItalic.ttf"
+  },
+  "resources/fonts/Gilroy-Thin.ttf": {
+    "file": "assets/Gilroy-Thin-DG3iQGn8.ttf",
+    "src": "resources/fonts/Gilroy-Thin.ttf"
+  },
+  "resources/fonts/Gilroy-ThinItalic.ttf": {
+    "file": "assets/Gilroy-ThinItalic-gF9dk6JJ.ttf",
+    "src": "resources/fonts/Gilroy-ThinItalic.ttf"
+  },
+  "resources/fonts/Gilroy-UltraLight.ttf": {
+    "file": "assets/Gilroy-UltraLight-CIPbampK.ttf",
+    "src": "resources/fonts/Gilroy-UltraLight.ttf"
+  },
+  "resources/fonts/Gilroy-UltraLightItalic.ttf": {
+    "file": "assets/Gilroy-UltraLightItalic-C7djAx-E.ttf",
+    "src": "resources/fonts/Gilroy-UltraLightItalic.ttf"
+  },
+  "resources/fonts/MingCute.eot": {
+    "file": "assets/MingCute-Bng9lLJg.eot",
+    "src": "resources/fonts/MingCute.eot"
+  },
+  "resources/fonts/MingCute.svg": {
+    "file": "assets/MingCute-DF9_oc27.svg",
+    "src": "resources/fonts/MingCute.svg"
+  },
+  "resources/fonts/MingCute.ttf": {
+    "file": "assets/MingCute-Cj0eC7Bx.ttf",
+    "src": "resources/fonts/MingCute.ttf"
+  },
+  "resources/fonts/MingCute.woff": {
+    "file": "assets/MingCute-BUSpgl5C.woff",
+    "src": "resources/fonts/MingCute.woff"
+  },
+  "resources/images/2019.png": {
+    "file": "assets/2019-Bx4YVogF.png",
+    "src": "resources/images/2019.png"
+  },
+  "resources/images/2021.png": {
+    "file": "assets/2021-BrZfCyNz.png",
+    "src": "resources/images/2021.png"
+  },
+  "resources/images/2023.png": {
+    "file": "assets/2023-CcCXfW_A.png",
+    "src": "resources/images/2023.png"
+  },
+  "resources/images/HeaderBg.png": {
+    "file": "assets/HeaderBg-ChkuLBAv.png",
+    "src": "resources/images/HeaderBg.png"
+  },
+  "resources/images/backend/brands/bitbucket.png": {
+    "file": "assets/bitbucket-JY-MQjeH.png",
+    "src": "resources/images/backend/brands/bitbucket.png"
+  },
+  "resources/images/backend/brands/dribbble.png": {
+    "file": "assets/dribbble-CYfSis_k.png",
+    "src": "resources/images/backend/brands/dribbble.png"
+  },
+  "resources/images/backend/brands/dropbox.png": {
+    "file": "assets/dropbox-BCymAMT5.png",
+    "src": "resources/images/backend/brands/dropbox.png"
+  },
+  "resources/images/backend/brands/g-suite.png": {
+    "file": "assets/g-suite-ZXQ3BWGS.png",
+    "src": "resources/images/backend/brands/g-suite.png"
+  },
+  "resources/images/backend/brands/github.png": {
+    "file": "assets/github-BCjAyx3y.png",
+    "src": "resources/images/backend/brands/github.png"
+  },
+  "resources/images/backend/brands/instagram.png": {
+    "file": "assets/instagram-QHlGRGt3.png",
+    "src": "resources/images/backend/brands/instagram.png"
+  },
+  "resources/images/backend/brands/messenger.png": {
+    "file": "assets/messenger-BsXeOWC_.png",
+    "src": "resources/images/backend/brands/messenger.png"
+  },
+  "resources/images/backend/brands/slack.png": {
+    "file": "assets/slack-DlA8CZ5x.png",
+    "src": "resources/images/backend/brands/slack.png"
+  },
+  "resources/images/backend/companies/airbnb.png": {
+    "file": "assets/airbnb-D06ePraT.png",
+    "src": "resources/images/backend/companies/airbnb.png"
+  },
+  "resources/images/backend/companies/amazon.png": {
+    "file": "assets/amazon-DyBbQM7X.png",
+    "src": "resources/images/backend/companies/amazon.png"
+  },
+  "resources/images/backend/companies/apple.png": {
+    "file": "assets/apple-DLwSwb1q.png",
+    "src": "resources/images/backend/companies/apple.png"
+  },
+  "resources/images/backend/companies/cisco.png": {
+    "file": "assets/cisco-Do_AZySc.png",
+    "src": "resources/images/backend/companies/cisco.png"
+  },
+  "resources/images/backend/companies/facebook.png": {
+    "file": "assets/facebook-DcAo0qTi.png",
+    "src": "resources/images/backend/companies/facebook.png"
+  },
+  "resources/images/backend/companies/google.png": {
+    "file": "assets/google-kuakmR0G.png",
+    "src": "resources/images/backend/companies/google.png"
+  },
+  "resources/images/backend/companies/instagram.png": {
+    "file": "assets/instagram-K59inoqH.png",
+    "src": "resources/images/backend/companies/instagram.png"
+  },
+  "resources/images/backend/companies/tata.png": {
+    "file": "assets/tata-D5K8KDCO.png",
+    "src": "resources/images/backend/companies/tata.png"
+  },
+  "resources/images/backend/favicon.ico": {
+    "file": "assets/favicon-C1DJ6vBS.ico",
+    "src": "resources/images/backend/logo-sm.png"
+  },
+  "resources/images/backend/flags/en.jpg": {
+    "file": "assets/en-D_UoizZa.jpg",
+    "src": "resources/images/backend/flags/en.jpg"
+  },
+  "resources/images/backend/flags/french.jpg": {
+    "file": "assets/french-C6ZESbA0.jpg",
+    "src": "resources/images/backend/flags/french.jpg"
+  },
+  "resources/images/backend/flags/germany.jpg": {
+    "file": "assets/germany-C5i8Kl-c.jpg",
+    "src": "resources/images/backend/flags/germany.jpg"
+  },
+  "resources/images/backend/flags/it.jpg": {
+    "file": "assets/it-bWlrT6aN.jpg",
+    "src": "resources/images/backend/flags/it.jpg"
+  },
+  "resources/images/backend/flags/ro.jpg": {
+    "file": "assets/ro-Dc3AAfdb.jpg",
+    "src": "resources/images/backend/flags/ro.jpg"
+  },
+  "resources/images/backend/flags/russia.jpg": {
+    "file": "assets/russia-9X2D4mPn.jpg",
+    "src": "resources/images/backend/flags/russia.jpg"
+  },
+  "resources/images/backend/flags/spain.jpg": {
+    "file": "assets/spain-uC3ozBks.jpg",
+    "src": "resources/images/backend/flags/spain.jpg"
+  },
+  "resources/images/backend/flags/us.jpg": {
+    "file": "assets/us-BfknJySK.jpg",
+    "src": "resources/images/backend/flags/us.jpg"
+  },
+  "resources/images/backend/lightbox-video.mp4": {
+    "file": "assets/lightbox-video-DWD2Y7zr.mp4",
+    "src": "resources/images/backend/lightbox-video.mp4"
+  },
+  "resources/images/backend/logo-dark.png": {
+    "file": "assets/logo-dark-BdY9TzR9.png",
+    "src": "resources/images/backend/logo-dark.png"
+  },
+  "resources/images/backend/logo-light.png": {
+    "file": "assets/logo-light-DcpEbMWg.png",
+    "src": "resources/images/backend/logo-light.png"
+  },
+  "resources/images/backend/logo-sm.png": {
+    "file": "assets/favicon-C1DJ6vBS.ico",
+    "src": "resources/images/backend/logo-sm.png"
+  },
+  "resources/images/backend/macbook.png": {
+    "file": "assets/macbook-CYlruGPS.png",
+    "src": "resources/images/backend/macbook.png"
+  },
+  "resources/images/days.png": {
+    "file": "assets/days-DQ2SuV9X.png",
+    "src": "resources/images/days.png"
+  },
+  "resources/images/locatie.png": {
+    "file": "assets/locatie-Ct4CibiL.png",
+    "src": "resources/images/locatie.png"
+  },
+  "resources/images/logo.svg": {
+    "file": "assets/logo-C3f6UO_O.svg",
+    "src": "resources/images/logo.svg"
+  },
+  "resources/images/luigi.png": {
+    "file": "assets/luigi-BS30TqHl.png",
+    "src": "resources/images/luigi.png"
+  },
+  "resources/images/radial-circle.svg": {
+    "file": "assets/radial-circle-BD5sESlT.svg",
+    "src": "resources/images/radial-circle.svg"
+  },
+  "resources/images/tematica.png": {
+    "file": "assets/tematica-DTKXVV2f.png",
+    "src": "resources/images/tematica.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CMbyVZ3R.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_popper-Bnif2dgu.js"
+    ]
+  },
+  "resources/js/backend/app.js": {
+    "file": "assets/app-llblQkFN.js",
+    "name": "app",
+    "src": "resources/js/backend/app.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/config.js": {
+    "file": "assets/config-AqqTu4UY.js",
+    "name": "config",
+    "src": "resources/js/backend/config.js",
+    "isEntry": true
+  },
+  "resources/js/backend/head.js": {
+    "file": "assets/head-HRzE2mBe.js",
+    "name": "head",
+    "src": "resources/js/backend/head.js",
+    "isEntry": true,
+    "imports": [
+      "_isObject-DB8w6JNV.js"
+    ]
+  },
+  "resources/js/backend/pages/apps-calendar.js": {
+    "file": "assets/apps-calendar-dm5QyAFc.js",
+    "name": "apps-calendar",
+    "src": "resources/js/backend/pages/apps-calendar.js",
+    "isEntry": true
+  },
+  "resources/js/backend/pages/apps-kanban.js": {
+    "file": "assets/apps-kanban-B-8hseyF.js",
+    "name": "apps-kanban",
+    "src": "resources/js/backend/pages/apps-kanban.js",
+    "isEntry": true,
+    "imports": [
+      "_sortable.esm-C0-Qcoum.js"
+    ]
+  },
+  "resources/js/backend/pages/charts-apex.js": {
+    "file": "assets/charts-apex-NOyN8RtP.js",
+    "name": "charts-apex",
+    "src": "resources/js/backend/pages/charts-apex.js",
+    "isEntry": true,
+    "imports": [
+      "_apexcharts.common-BWi2c-AX.js",
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/dashboard.js": {
+    "file": "assets/dashboard-BMlFYFBM.js",
+    "name": "dashboard",
+    "src": "resources/js/backend/pages/dashboard.js",
+    "isEntry": true,
+    "imports": [
+      "_apexcharts.common-BWi2c-AX.js",
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/extended-animation.js": {
+    "file": "assets/extended-animation-QOT4FgcQ.js",
+    "name": "extended-animation",
+    "src": "resources/js/backend/pages/extended-animation.js",
+    "isEntry": true
+  },
+  "resources/js/backend/pages/extended-lightbox.js": {
+    "file": "assets/extended-lightbox-gpqWfqLm.js",
+    "name": "extended-lightbox",
+    "src": "resources/js/backend/pages/extended-lightbox.js",
+    "isEntry": true,
+    "imports": [
+      "_glightbox.min-DJeyUJsX.js",
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/extended-plyr.js": {
+    "file": "assets/extended-plyr-D2Muvwna.js",
+    "name": "extended-plyr",
+    "src": "resources/js/backend/pages/extended-plyr.js",
+    "isEntry": true
+  },
+  "resources/js/backend/pages/extended-ratings.js": {
+    "file": "assets/extended-ratings-ErEFw6mO.js",
+    "name": "extended-ratings",
+    "src": "resources/js/backend/pages/extended-ratings.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/extended-sortable.js": {
+    "file": "assets/extended-sortable-DmMt0_S1.js",
+    "name": "extended-sortable",
+    "src": "resources/js/backend/pages/extended-sortable.js",
+    "isEntry": true,
+    "imports": [
+      "_sortable.esm-C0-Qcoum.js"
+    ]
+  },
+  "resources/js/backend/pages/extended-sweetalert.js": {
+    "file": "assets/extended-sweetalert-BoIJSa2m.js",
+    "name": "extended-sweetalert",
+    "src": "resources/js/backend/pages/extended-sweetalert.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/extended-swiper.js": {
+    "file": "assets/extended-swiper-BlRiHsgw.js",
+    "name": "extended-swiper",
+    "src": "resources/js/backend/pages/extended-swiper.js",
+    "isEntry": true
+  },
+  "resources/js/backend/pages/extended-tippy.js": {
+    "file": "assets/extended-tippy-D9bKTK3r.js",
+    "name": "extended-tippy",
+    "src": "resources/js/backend/pages/extended-tippy.js",
+    "isEntry": true,
+    "imports": [
+      "_popper-Bnif2dgu.js"
+    ]
+  },
+  "resources/js/backend/pages/extended-tour.js": {
+    "file": "assets/extended-tour-D65rUWXq.js",
+    "name": "extended-tour",
+    "src": "resources/js/backend/pages/extended-tour.js",
+    "isEntry": true
+  },
+  "resources/js/backend/pages/form-color-pickr.js": {
+    "file": "assets/form-color-pickr-DfUYYY_t.js",
+    "name": "form-color-pickr",
+    "src": "resources/js/backend/pages/form-color-pickr.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/form-editor.js": {
+    "file": "assets/form-editor-BTz9tP9u.js",
+    "name": "form-editor",
+    "src": "resources/js/backend/pages/form-editor.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js",
+      "_isObject-DB8w6JNV.js"
+    ]
+  },
+  "resources/js/backend/pages/form-fileupload.js": {
+    "file": "assets/form-fileupload--P-ttL-a.js",
+    "name": "form-fileupload",
+    "src": "resources/js/backend/pages/form-fileupload.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/form-flatpickr.js": {
+    "file": "assets/form-flatpickr-IE5NBRFs.js",
+    "name": "form-flatpickr",
+    "src": "resources/js/backend/pages/form-flatpickr.js",
+    "isEntry": true
+  },
+  "resources/js/backend/pages/form-inputmask.js": {
+    "file": "assets/form-inputmask-BiWjmd76.js",
+    "name": "form-inputmask",
+    "src": "resources/js/backend/pages/form-inputmask.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/form-rangeslider.js": {
+    "file": "assets/form-rangeslider-DUl2t0VR.js",
+    "name": "form-rangeslider",
+    "src": "resources/js/backend/pages/form-rangeslider.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/form-select.js": {
+    "file": "assets/form-select-CnLR525N.js",
+    "name": "form-select",
+    "src": "resources/js/backend/pages/form-select.js",
+    "isEntry": true,
+    "css": [
+      "assets/form-select-CD8wio9X.css"
+    ]
+  },
+  "resources/js/backend/pages/form-validation.js": {
+    "file": "assets/form-validation-Dpa1UgWz.js",
+    "name": "form-validation",
+    "src": "resources/js/backend/pages/form-validation.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/gallery.js": {
+    "file": "assets/gallery-tNQjKObS.js",
+    "name": "gallery",
+    "src": "resources/js/backend/pages/gallery.js",
+    "isEntry": true,
+    "imports": [
+      "_glightbox.min-DJeyUJsX.js",
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/highlight.js": {
+    "file": "assets/highlight-CRflbm1A.js",
+    "name": "highlight",
+    "src": "resources/js/backend/pages/highlight.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/icons-material-symbols.js": {
+    "file": "assets/icons-material-symbols-Cy916vg7.js",
+    "name": "icons-material-symbols",
+    "src": "resources/js/backend/pages/icons-material-symbols.js",
+    "isEntry": true
+  },
+  "resources/js/backend/pages/icons-mingcute.js": {
+    "file": "assets/icons-mingcute-BWh7f9OT.js",
+    "name": "icons-mingcute",
+    "src": "resources/js/backend/pages/icons-mingcute.js",
+    "isEntry": true
+  },
+  "resources/js/backend/pages/maps-google.js": {
+    "file": "assets/maps-google-6RFfbnTB.js",
+    "name": "maps-google",
+    "src": "resources/js/backend/pages/maps-google.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/backend/pages/table-gridjs.js": {
+    "file": "assets/table-gridjs-DR_nySPl.js",
+    "name": "table-gridjs",
+    "src": "resources/js/backend/pages/table-gridjs.js",
+    "isEntry": true
+  },
+  "resources/js/backend/plugins/grapesjs.js": {
+    "file": "assets/grapesjs-BG7nVOWP.js",
+    "name": "grapesjs",
+    "src": "resources/js/backend/plugins/grapesjs.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/js/plugins/notiflix.js": {
+    "file": "assets/notiflix-CSSMWX2D.js",
+    "name": "notiflix",
+    "src": "resources/js/plugins/notiflix.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers-BosuxZz1.js"
+    ]
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-C7y0n1PX.css",
+    "src": "resources/sass/app.scss",
+    "isEntry": true
+  },
+  "resources/sass/backend/app.scss": {
+    "file": "assets/app-C5AX5x8O.css",
+    "src": "resources/sass/backend/app.scss",
+    "isEntry": true
+  },
+  "resources/sass/backend/icons.scss": {
+    "file": "assets/icons-BNXiBzWl.css",
+    "src": "resources/sass/backend/icons.scss",
+    "isEntry": true
+  },
+  "resources/sass/backend/plugins/grapesjs.scss": {
+    "file": "assets/grapesjs-fCy25JX6.css",
+    "src": "resources/sass/backend/plugins/grapesjs.scss",
+    "isEntry": true
+  }
+}
