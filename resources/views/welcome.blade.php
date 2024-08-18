@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Conferința Europeana De Tineret Și Familii</title>
         <!-- Icons -->
         <link
            rel="stylesheet"

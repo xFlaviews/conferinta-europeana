@@ -2,11 +2,11 @@
 
     <div class="align-items-center d-flex flex-column justify-content-center text-center col-10">
         <div class="header-title">
-            <h1 class="display-1 fw-bold mb-3 mb-lg-0">Conferința Europeană</h1>
+            <h1 class="display-1 fw-bold mb-4 ">Conferința Europeană</h1>
             <h2 class="fw-bolder letter-spacing-m">DE TINERET ȘI FAMILII</h2>
         </div>
         <div class="custom-search col-12 col-md-10 col-lg-6 mt-5">
-            <h4 class="fw-light mb-3">Fii la curent cu toate noutațile conferinței 2024</h4>
+            <h5 class="fw-light mb-3">Fii la curent cu toate noutățile conferinței 2024</h5>
             <div><form method="POST" action="{{ route('register_email_for_newsletter') }}">
                 @csrf
                 <input type="text" class="form-control custom-search-input @error('email') is-invalid @enderror" name="email" placeholder="nume@mail.com">
