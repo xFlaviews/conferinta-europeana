@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="d-row d-flex justify-content-between">
                 <a class="navbar-brand d-flex active" href="#newsletter-section">
-                    <img src="http://[::1]:5173/resources/images/logo.svg" alt="Logo"
+                    <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="Logo"
                         class="d-inline-block align-text-top logo">
                     <div class="ms-2 my-auto text-white navbar-logo-text">
                         <p class="mb-0">CONFERINȚA</p>
@@ -44,30 +44,46 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown" id="language">
-                        <a class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no " href="#"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="ph ph-translate"></i>Română<i class="ph ph-caret-down"></i>
-                        </a>
+                        <button class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no "
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="ph ph-translate"></i>{{ __(app()->getLocale()) }}<i class="ph ph-caret-down"></i>
+                        </button>
                         <ul class="dropdown-menu dropdown-bg">
-                            <li><a class="dropdown-item" href="#">Italiano</a></li>
-                            <li><a class="dropdown-item" href="#">Deutsch</a></li>
-                            <li><a class="dropdown-item" href="#">English</a></li>
+                            @foreach (getAllLocales() as $item)
+                                @if(app()->getLocale() != $item)
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('lang',['lang' => $item]) }}">
+                                            {{ __($item) }}
+                                        </a>
+                                    </li>
+                                @endif
+                            @endforeach
                         </ul>
                     </li>
 
                     <!-- Additional mobile elements -->
                     <div class="mt-5 mb-3 d-row d-flex justify-content-between d-lg-none">
                         <li class="nav-item dropdown px-4 py-2 navbar-element-container-color">
-                            <a class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no align-items-center locale"
-                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="ph ph-translate"></i><img
-                                    src="http://[::1]:5173/resources/images/backend/flags/ro.jpg" alt="locale image ro"
-                                    class="locale image navbar">RO<i class="ph ph-caret-down"></i>
-                            </a>
+                            <button class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no align-items-center locale"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="ph ph-translate"></i>
+                                <img
+                                    src="{{ Vite::asset('resources/images/backend/flags/'.app()->getLocale().'.jpg') }}"
+                                    alt="locale image {{ app()->getLocale() }}"
+                                    class="locale image navbar"
+                                > {{ __(app()->getLocale()) }}
+                                <i class="ph ph-caret-down"></i>
+                            </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">It</a></li>
-                                <li><a class="dropdown-item" href="#">De</a></li>
-                                <li><a class="dropdown-item" href="#">Eng</a></li>
+                                @foreach (getAllLocales() as $item)
+                                    @if(app()->getLocale() != $item)
+                                        <li>
+                                            <a class="dropdown-item" href="{{ route('lang',['lang' => $item]) }}">
+                                                {{ __($item) }}
+                                            </a>
+                                        </li>
+                                    @endif
+                                @endforeach
                             </ul>
                         </li>
                         <div class="d-flex align-items-center px-4 py-2 navbar-element-container-color">Contacte</div>
