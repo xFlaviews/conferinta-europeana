@@ -279,5 +279,6 @@
     "unsubscribe_before": "If you no longer wish to receive e-mails, please press the following:",
     "unsubscribe_after": "to proceed with the unsubscription",
     "You have successfully unsubscribed": "You have successfully unsubscribed",
-    "You have successfully subscribed to the newsletter": "You have successfully subscribed to the newsletter"
+    "You have successfully subscribed to the newsletter": "You have successfully subscribed to the newsletter",
+    "Days": "Days"
 }

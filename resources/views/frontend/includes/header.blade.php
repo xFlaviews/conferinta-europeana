@@ -27,10 +27,10 @@
                             <i class="ph ph-book-open"></i>Informatii<i class="ph ph-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-bg">
-                            <li><a class="dropdown-item" href="#invitati">INVITAȚI</a></li>
-                            <li><a class="dropdown-item" href="#tematica">TEMATICĂ</a></li>
-                            <li><a class="dropdown-item" href="#locatie">LOCAȚIE</a></li>
-                            <li><a class="dropdown-item" href="#zilele">DATĂ</a></li>
+                            <li><a class="dropdown-item" href="#guest-section">INVITAȚI</a></li>
+                            <li><a class="dropdown-item" href="#tematic-section">TEMATICĂ</a></li>
+                            <li><a class="dropdown-item" href="#location-section">LOCAȚIE</a></li>
+                            <li><a class="dropdown-item" href="#days-section">DATĂ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" id="contacte">
