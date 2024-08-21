@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('group_id')->references('id')->on('groups');
             $table->foreignId('user_id')->references('id')->on('users');
-            $table->enum('roole',['guest','admin'])->default('guest');
+            $table->enum('role',['guest','admin'])->default('guest');
             $table->timestamps();
         });
     }

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use App\Models\Model;
 
-class Guest extends Model
+class GroupRooms extends Model
 {
     use HasFactory;
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Domains\Event\Http\Controllers\EventController;
 use App\Domains\Newsletter\Http\Controllers\NewsletterController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,5 +33,20 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
             Route::post('/{newsletter_content}/delete',[NewsletterController::class, 'delete'])->middleware('can:newsletter.delete')->name('delete');
             
         });
+
+        Route::group([
+            'prefix' => 'event',
+            'as' => 'event.',
+            'middleware' => ['permission:event.read']
+        ], function () {
+            Route::get('/',[EventController::class, 'index'])->name('index');
+            
+            Route::post('/save',[EventController::class, 'save'])->middleware('can:newsletter.create')->name('save');
+            Route::post('/{event}/update',[EventController::class, 'update'])->middleware('can:event.update')->name('update');
+            Route::post('/{event}/delete',[EventController::class, 'delete'])->middleware('can:event.delete')->name('delete');
+            
+        });
+
     });
+
 });

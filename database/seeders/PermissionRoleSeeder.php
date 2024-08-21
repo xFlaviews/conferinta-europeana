@@ -18,7 +18,11 @@ class PermissionRoleSeeder extends Seeder
             'newsletter.create',
             'newsletter.read',
             'newsletter.update',
-            'newsletter.delete'
+            'newsletter.delete',
+            'event.create',
+            'event.read',
+            'event.update',
+            'event.delete',
         ];
 
         foreach ($permissions as $permission) {

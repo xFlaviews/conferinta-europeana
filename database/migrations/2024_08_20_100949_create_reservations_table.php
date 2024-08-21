@@ -11,14 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('guests', function (Blueprint $table) {
+        Schema::create('reservations', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('hotel_id')->references('id')->on('hotels');
+            $table->foreignId('room_id')->references('id')->on('rooms');
             $table->foreignId('group_id')->nullable()->references('id')->on('groups');
-            $table->string('username')->unique();
-            $table->string('password');
-            $table->string('email');
-            $table->string('name');
-            $table->string('surname');
+            $table->integer('max_guests')->default('1');
+            $table->decimal('price',8,2)->nullable();
+            $table->date('checkin');
+            $table->date('checkout');
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('guests');
+        Schema::dropIfExists('reservations');
     }
 };

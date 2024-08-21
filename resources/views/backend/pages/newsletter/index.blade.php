@@ -139,20 +139,16 @@
     const iframe = document.getElementById('preview-newsletter-iframe')
 
     const modalClose = document.getElementsByClassName('modal-close') // close modal button
-    //TODO fix this
-    document.getElementById('form-delete-newsletter').addEventListener('submit', function(event) {
 
-        this.preventDefault(); // Impedisce l'invio del modulo
-        let userResponse = confirm("Vuoi procedere con l'operazione?");
-        // Controlla la risposta dell'utente
-        if (userResponse) {
-            // L'utente ha cliccato su "OK"
-            this.submit(); // Impedisce l'invio del modulo
-        } else {
-            // L'utente ha cliccato su "Annulla"
+    const formsDelete = document.querySelectorAll('#form-delete-newsletter');
             
-        }
-        
+    formsDelete.forEach(function(form) {
+        form.addEventListener('submit', function(event) {
+            const confirmed = confirm('Sei sicuro di voler eliminare questo evento?');
+            if (!confirmed) {
+                event.preventDefault();
+            }
+        });
     });
 
     function showModal(url) {

@@ -11,14 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('guests', function (Blueprint $table) {
+        Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('group_id')->nullable()->references('id')->on('groups');
-            $table->string('username')->unique();
-            $table->string('password');
-            $table->string('email');
-            $table->string('name');
-            $table->string('surname');
+            $table->string('name')->unique();
             $table->timestamps();
         });
     }
@@ -28,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('guests');
+        Schema::dropIfExists('events');
     }
 };

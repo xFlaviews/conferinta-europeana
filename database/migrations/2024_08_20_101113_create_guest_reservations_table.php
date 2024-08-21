@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('guest_reservations', function (Blueprint $table) {
             $table->id();
             $table->foreignId('guest_id')->references('id')->on('guests');
+            $table->foreignId('group_id')->nullable()->references('id')->on('groups');
             $table->foreignId('reservation_id')->references('id')->on('reservations');
             $table->date('checkin');
             $table->date('checkout');

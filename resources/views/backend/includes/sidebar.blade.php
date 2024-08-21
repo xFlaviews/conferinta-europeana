@@ -55,6 +55,14 @@
                     </ul>
                 </li>
             @endcan
+            @can('event.read')
+                <li class="menu-item">
+                    <a href="{{ route('backend.event.index') }}" class="menu-link">
+                        <span class="menu-icon"><i class="mgc_calendar_month_fill"></i></span>
+                        <span class="menu-text"> {{ __('Event') }} </span>
+                    </a>
+                </li>
+            @endcan
             {{--
             <li class="menu-title">Apps</li>
 
