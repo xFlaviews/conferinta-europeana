@@ -15,10 +15,6 @@ class EventController extends Controller
         ]);
     }
 
-    public function create() {
-        
-    }
-
     public function save() {
        //dd('sad');
         request()->validate([
@@ -32,7 +28,19 @@ class EventController extends Controller
     }
 
     public function update(Event $event) {
-        dd($event);
+
+        request()->validate([
+            'name' => ['required','string','max:255']
+        ]);
+
+        $eventSameName = Event::where('name', request('name'))->where('id','<>', $event->id)->first();
+        if (!$eventSameName) {
+            $event->update([
+                'name' => request('name')
+            ]);
+        }
+
+        return redirect()->back();
     }
 
     public function delete(Event $event) {
