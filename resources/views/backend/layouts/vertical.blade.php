@@ -48,6 +48,24 @@
 
     </div>
 
+    @if ($errors->any())
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                @foreach ($errors->all() as $error)
+                    Notify.failure('{{ $error }}');
+                @endforeach
+            });
+        </script>
+    @endif
+    {{--
+    @if ($successMessage??false)
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                Notify.success('{{ $successMessage }}');
+            });
+        </script>
+    @endif --}}
+
     <!-- bundle -->
     @yield('script')
     <!-- App js -->

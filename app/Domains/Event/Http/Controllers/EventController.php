@@ -5,6 +5,7 @@ namespace App\Domains\Event\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Event;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class EventController extends Controller
 {
@@ -30,15 +31,14 @@ class EventController extends Controller
     public function update(Event $event) {
 
         request()->validate([
-            'name' => ['required','string','max:255']
+            'name' => ['required','string','max:255', Rule::unique('events','name')->ignore($event->id)]
         ]);
 
-        $eventSameName = Event::where('name', request('name'))->where('id','<>', $event->id)->first();
-        if (!$eventSameName) {
-            $event->update([
-                'name' => request('name')
-            ]);
-        }
+        
+        $event->update([
+            'name' => request('name')
+        ]);
+        
 
         return redirect()->back();
     }

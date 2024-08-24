@@ -23,6 +23,10 @@ class PermissionRoleSeeder extends Seeder
             'event.read',
             'event.update',
             'event.delete',
+            'group.create',
+            'group.read',
+            'group.update',
+            'group.delete'
         ];
 
         foreach ($permissions as $permission) {

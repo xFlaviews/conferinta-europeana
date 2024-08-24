@@ -63,6 +63,15 @@
                     </a>
                 </li>
             @endcan
+            
+            @can('group.read')
+                <li class="menu-item">
+                    <a href="{{ route('backend.group.index') }}" class="menu-link">
+                        <span class="menu-icon"><i class="mgc_group_line"></i></span>
+                        <span class="menu-text"> {{ __('Group') }} </span>
+                    </a>
+                </li>
+            @endcan
             {{--
             <li class="menu-title">Apps</li>
 
