@@ -2,7 +2,7 @@
 
 use App\Domains\Event\Http\Controllers\EventController;
 use App\Domains\Newsletter\Http\Controllers\NewsletterController;
-use App\Http\Controllers\GroupController;
+use App\Domains\Group\Http\Controllers\GroupController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
@@ -10,7 +10,7 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
 
     Route::get('/dashboard', function () {
         return view('backend.index');
-    })->middleware(['auth', 'verified'])->name('dashboard');
+    })->middleware(['auth', 'verified','role:admin,super_admin'])->name('dashboard');
 
     Route::get('/', function () {
         return view('backend.index');
@@ -54,9 +54,14 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
             'middleware' => ['permission:group.read']
         ], function () {
             Route::get('/',[GroupController::class, 'index'])->name('index');
+
+            Route::get('/dashboard',[GroupController::class, 'dashboard'])->name('dashboard');
+
+            Route::post('/{group}/select',[GroupController::class, 'select'])->name('select');
             
             Route::post('/save',[GroupController::class, 'save'])->middleware('can:newsletter.create')->name('save');
             Route::post('/{group}/update',[GroupController::class, 'update'])->middleware('can:group.update')->name('update');
+            
             //Route::post('/{group}/delete',[GroupController::class, 'delete'])->middleware('can:group.delete')->name('delete');
             
         });

@@ -33,6 +33,14 @@
         height: 24px;
     }
 
+    .logo-custom {
+        height: 3rem !important;
+    }
+
+    .logo-custom-light {
+        filter: brightness(0) saturate(100%) invert(10%) sepia(39%) saturate(2929%) hue-rotate(213deg) brightness(98%) contrast(92%);
+    }
+
     .logo-sm {
         height: 32px;
     }

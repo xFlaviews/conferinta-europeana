@@ -32,7 +32,9 @@
         </div>
     </div>
     <div class="d-flex flex-column flex-sm-row justify-content-sm-between justify-content-center">
-        <div class="col-auto order-2 order-sm-1 d-flex justify-content-sm-between justify-content-center"><span class="text-regular-16 gray-text">Copyright © 2024</span></div>
+        <div class="col-auto order-2 order-sm-1 d-flex justify-content-sm-between justify-content-center">
+            <span class="text-regular-16 gray-text">Copyright © 2024</span>
+        </div>
         <div class="col-auto order-1 order-sm-2">
             <div class="d-flex gap-3 justify-content-sm-between justify-content-center">
                 <span class="text-regular-16 gray-text">Terms & Conditions</span>

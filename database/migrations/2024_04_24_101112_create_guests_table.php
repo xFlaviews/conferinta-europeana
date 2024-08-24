@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('name');
             $table->string('surname');
+            // Todo Add:gender, phone, birthday, birth_country, birth_region, birth_city 
             $table->timestamps();
         });
     }

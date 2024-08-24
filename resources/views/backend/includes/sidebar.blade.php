@@ -4,14 +4,22 @@
     <a href="{{ route('backend.index') }}" class="logo-box">
         <!-- Light Brand Logo -->
         <div class="logo-light">
-            <img src="{{ Vite::asset('resources/images/backend/logo-light.png') }}" class="logo-lg h-6" alt="Light logo">
-            <img src="{{ Vite::asset('resources/images/backend/logo-sm.png') }}" class="logo-sm" alt="Small logo">
+            {{-- <img src="{{ Vite::asset('resources/images/backend/logo-light.png') }}" class="logo-lg h-6" alt="Light logo"> --}}
+            <span class="logo-lg h-6 flex items-center">
+                <img src="{{ Vite::asset('resources/images/logo.svg') }}" class="h-12" alt="Small logo"> 
+                {{ config('app.name') }} 
+            </span>
+            <img src="{{ Vite::asset('resources/images/logo.svg') }}" class="logo-sm h-12" alt="Small logo">
         </div>
 
         <!-- Dark Brand Logo -->
         <div class="logo-dark">
-            <img src="{{ Vite::asset('resources/images/backend/logo-dark.png') }}" class="logo-lg h-6" alt="Dark logo">
-            <img src="{{ Vite::asset('resources/images/backend/logo-sm.png') }}" class="logo-sm" alt="Small logo">
+            {{-- <img src="{{ Vite::asset('resources/images/backend/logo-dark.png') }}" class="logo-lg h-6" alt="Dark logo"> --}}
+            <span class="logo-lg h-6 flex items-center">
+                <img src="{{ Vite::asset('resources/images/logo.svg') }}" class="logo-custom-light h-12" alt="Small logo"> 
+                {{ config('app.name') }} 
+            </span>
+            <img src="{{ Vite::asset('resources/images/logo.svg') }}" class="logo-sm logo-custom logo-custom-light" alt="Small logo">
         </div>
     </a>
 
@@ -25,12 +33,22 @@
         <ul class="menu" data-fc-type="accordion">
             <li class="menu-title">Menu</li>
 
-            <li class="menu-item">
-                <a href="{{ route('backend.index') }}" class="menu-link">
-                    <span class="menu-icon"><i class="mgc_home_3_line"></i></span>
-                    <span class="menu-text"> Dashboard </span>
-                </a>
-            </li>
+            @role(['admin','super_admin'])
+                <li class="menu-item">
+                    <a href="{{ route('backend.index') }}" class="menu-link">
+                        <span class="menu-icon"><i class="mgc_home_3_line"></i></span>
+                        <span class="menu-text"> {{ __('Dashboard') }} </span>
+                    </a>
+                </li>
+            @endrole
+            @if(group())
+                <li class="menu-item">
+                    <a href="{{ route('backend.group.dashboard') }}" class="menu-link">
+                        <span class="menu-icon"><i class="mgc_home_3_line"></i></span>
+                        <span class="menu-text"> {{ __('Group Dashboard') }} </span>
+                    </a>
+                </li>
+            @endif
             @can('newsletter.read')
                 <li class="menu-item">
                     <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link">

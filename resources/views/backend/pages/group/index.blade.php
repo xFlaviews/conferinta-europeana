@@ -90,7 +90,16 @@
                                     {{ $group->updated_at }}
                                 </td>
                                 <td class="whitespace-nowrap py-4 px-3 text-center text-sm font-medium">
-
+                                    <form method="POST"
+                                        id="form-delete-group"
+                                        action="{{ route('backend.group.select', $group->id) }}"
+                                        class="inline"
+                                    >
+                                        @csrf
+                                        <button class="ms-0.5" title="{{ __('Dashboard') }}">
+                                            <i class="mgc_finger_press_line text-xl text-info"></i>
+                                        </button>
+                                    </form>
                                     @can('group.update')
                                         <button id="modal-button" class="ms-0.5 me-0.5" onclick="showModal('edit',{{ json_encode($group->toArray()) }})">
                                             <i class="mgc_edit_line text-lg text-warning"></i>

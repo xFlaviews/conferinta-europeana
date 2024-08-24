@@ -16,8 +16,6 @@ return new class extends Migration
             $table->string('custom_id')->nullable();
             $table->foreignId('hotel_id')->references('id')->on('hotels');
             $table->string('name');
-            $table->enum('pay_per',['guest','room']);
-            $table->integer('min_guests');
             $table->integer('max_guests');
             $table->integer('price')->default(0);
             $table->timestamps();
