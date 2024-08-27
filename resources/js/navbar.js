@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var el_autohide = document.querySelector(".autohide");
-
+    var mainNav = document.getElementById("main_nav");
     if (el_autohide) {
         // Add initial-top class on page load
         el_autohide.classList.add("initial-top");
@@ -22,6 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 el_autohide.classList.remove("scrolled-up");
                 el_autohide.classList.add("scrolled-down");
+
+                if (el_autohide.classList.contains("menu-opened")) {
+                    el_autohide.classList.remove("menu-opened");
+                }
+                if (mainNav.classList.contains("show")) {
+                    mainNav.classList.remove("show");
+                }
             }
             last_scroll_top = scroll_top;
         });

@@ -367,6 +367,10 @@
     "file": "assets/macbook-CYlruGPS.png",
     "src": "resources/images/backend/macbook.png"
   },
+  "resources/images/conference-logo.svg": {
+    "file": "assets/logo-C3f6UO_O.svg",
+    "src": "resources/images/logo.svg"
+  },
   "resources/images/days.png": {
     "file": "assets/days-DQ2SuV9X.png",
     "src": "resources/images/days.png"
@@ -664,12 +668,12 @@
     ]
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-BwT9Gl9j.css",
+    "file": "assets/app-CfKSjaZ3.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   },
   "resources/sass/backend/app.scss": {
-    "file": "assets/app-DzICCbtM.css",
+    "file": "assets/app-CVTtMAxz.css",
     "src": "resources/sass/backend/app.scss",
     "isEntry": true
   },

@@ -72,9 +72,9 @@
             <div class="col-12 col-lg-6 text-start order-2 order-lg-1 text-start text-lg-end mb-5">
                 <div class="mb-3 accent-text">TEMATICĂ</div>
                 <div>
-                    <h1 class="fw-bold mb-4">tematic-section acestui an</h1>
+                    <h1 class="fw-bold mb-4">Tematica acestui an</h1>
                 </div>
-                <div><span class="paragraph-regular-20">tematic-section din acest an va fi IMPLICAREA. Vom avea
+                <div><span class="paragraph-regular-20">Tematica din acest an va fi IMPLICAREA. Vom avea
                         prezentări dedicate acestui subiect atât de actual și important pentru tineri. Ne dorim ca orice
                         tânăr, indiferent de vârstă, să fie implicat activ și pozitiv în lucrarea lui Dumnezeu din
                         biserica locală.<br><br>Vom avea și întâlniri de rugăciune în care tinerii să poată beneficia de

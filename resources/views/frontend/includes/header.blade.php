@@ -22,15 +22,26 @@
                 <ul class="navbar-nav ms-auto d-flex gap-4">
                     <!-- Navigation items -->
                     <li class="nav-item dropdown" id="informatii">
-                        <a class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no" href="#"
+                        <a class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no bottom-border" href="#"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="ph ph-book-open"></i>Informatii<i class="ph ph-caret-down"></i>
                         </a>
-                        <ul class="dropdown-menu dropdown-bg">
-                            <li><a class="dropdown-item" href="#guest-section">INVITAȚI</a></li>
-                            <li><a class="dropdown-item" href="#tematic-section">TEMATICĂ</a></li>
-                            <li><a class="dropdown-item" href="#location-section">LOCAȚIE</a></li>
-                            <li><a class="dropdown-item" href="#days-section">DATĂ</a></li>
+                        <ul class="dropdown-menu dropdown-bg dropdown-mobile">
+                            <li><a class="dropdown-item align-text-top d-flex justify-content-start align-items-start bottom_border"
+                                    href="#guest-section"><img
+                                        src="{{ Vite::asset('resources/images/double-chevron.svg') }}" alt="Logo"
+                                        class="me-2 align-text-top mobile-only">INVITAȚI</a></li>
+                            <li><a class="dropdown-item align-text-top d-flex justify-content-start align-items-start bottom_border"
+                                    href="#tematic-section"><img
+                                        src="{{ Vite::asset('resources/images/double-chevron.svg') }}" alt="Logo"
+                                        class="me-2 align-text-top mobile-only">TEMATICĂ</a></li>
+                            <li><a class="dropdown-item align-text-top d-flex justify-content-start align-items-start bottom_border"
+                                    href="#location-section"><img
+                                        src="{{ Vite::asset('resources/images/double-chevron.svg') }}" alt="Logo"
+                                        class="me-2 align-text-top mobile-only">LOCAȚIE</a></li>
+                            <li><a class="dropdown-item" href="#days-section"><img
+                                        src="{{ Vite::asset('resources/images/double-chevron.svg') }}" alt="Logo"
+                                        class="me-2 align-text-top mobile-only">DATĂ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" id="contacte">
@@ -43,16 +54,16 @@
                             <i class="ph ph-phone"></i>Faq
                         </a>
                     </li>
-                    <li class="nav-item dropdown" id="language">
+                    <li class="nav-item dropdown fit-height " id="language">
                         <button class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no "
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="ph ph-translate"></i>{{ __(app()->getLocale()) }}<i class="ph ph-caret-down"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-bg">
                             @foreach (getAllLocales() as $item)
-                                @if(app()->getLocale() != $item)
+                                @if (app()->getLocale() != $item)
                                     <li>
-                                        <a class="dropdown-item" href="{{ route('lang',['lang' => $item]) }}">
+                                        <a class="dropdown-item" href="{{ route('lang', ['lang' => $item]) }}">
                                             {{ __($item) }}
                                         </a>
                                     </li>
@@ -60,37 +71,40 @@
                             @endforeach
                         </ul>
                     </li>
+                    <div class="d-flex justify-content-between mobile-only">
+                    <li class="locale-bubble">
+                    <button
+                        class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no align-items-center locale "
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ph ph-translate"></i>
+                        <img src="{{ Vite::asset('resources/images/backend/flags/' . app()->getLocale() . '.jpg') }}"
+                            alt="locale image {{ app()->getLocale() }}" class="locale image navbar">
+                      {{ strtoupper(substr(__(app()->getLocale()), 0, 2)) }}
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <ul class="dropdown-menu fit-content">
+                        @foreach (getAllLocales() as $item)
+                            @if (app()->getLocale() != $item)
+                                <li class="d-flex align-items-center">
+                                 <img src="{{ Vite::asset('resources/images/backend/flags/' . $item . '.jpg') }}"
+                            alt="locale image {{ app()->getLocale() }}" class="locale image navbar me-2">
+                                    <a class="dropdown-item" href="{{ route('lang', ['lang' => $item]) }}">
+                                    {{ substr(__($item), 0, 2) }}
 
-                    <!-- Additional mobile elements -->
-                    <div class="mt-5 mb-3 d-row d-flex justify-content-between d-lg-none">
-                        <li class="nav-item dropdown px-4 py-2 navbar-element-container-color">
-                            <button class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no align-items-center locale"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="ph ph-translate"></i>
-                                <img
-                                    src="{{ Vite::asset('resources/images/backend/flags/'.app()->getLocale().'.jpg') }}"
-                                    alt="locale image {{ app()->getLocale() }}"
-                                    class="locale image navbar"
-                                > {{ __(app()->getLocale()) }}
-                                <i class="ph ph-caret-down"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                                @foreach (getAllLocales() as $item)
-                                    @if(app()->getLocale() != $item)
-                                        <li>
-                                            <a class="dropdown-item" href="{{ route('lang',['lang' => $item]) }}">
-                                                {{ __($item) }}
-                                            </a>
-                                        </li>
-                                    @endif
-                                @endforeach
-                            </ul>
-                        </li>
-                        <div class="d-flex align-items-center px-4 py-2 navbar-element-container-color">Contacte</div>
+ 
+                                    </a>
+                                </li>
+                            @endif
+                        @endforeach
+                    </ul>
+                    </li>
+                      <div class="d-flex align-items-center px-4 py-2 navbar-element-container-color fit-height">Contacte</div>
                     </div>
-                </ul>
             </div>
+            </ul>
+        </div>
         </div>
     </nav>
 
 </header>
+
