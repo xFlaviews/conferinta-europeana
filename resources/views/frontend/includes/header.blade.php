@@ -55,7 +55,7 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown fit-height " id="language">
-                        <button class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no "
+                        <button class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no rounded-border"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="ph ph-translate"></i>{{ __(app()->getLocale()) }}<i class="ph ph-caret-down"></i>
                         </button>
