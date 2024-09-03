@@ -676,12 +676,12 @@
     ]
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-BCX6Qryv.css",
+    "file": "assets/app-4Aj0JNKc.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   },
   "resources/sass/backend/app.scss": {
-    "file": "assets/app-CW7S4IRv.css",
+    "file": "assets/app-DBYpChYS.css",
     "src": "resources/sass/backend/app.scss",
     "isEntry": true
   },
