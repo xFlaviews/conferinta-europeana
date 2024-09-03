@@ -125,6 +125,7 @@ body {
     font-size: 20px;
     line-height: 32px;
     color: rgba(255, 255, 255, 0.8);
+    
 }
 .text-regular-20 {
     font-size: 20px;
@@ -349,18 +350,26 @@ h6 {
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.carousel-img{
+    height: 176px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .accent-text {
     font-size: 20px;
     color: #fce8c3;
     letter-spacing: 2px;
 }
 @include media-breakpoint-up(sm) {
-    .main-img {
+    .main-img,.carousel-img {
         height: 328px;
     }
 }
 @media (min-width: 400px) and (max-width: 575.98px) {
-    .main-img {
+    .main-img,.carousel-img {
         height: 250px;
     }
 }
@@ -681,7 +690,7 @@ a {
     }
     .locale-bubble .dropdown-item {
         width: min-content;
-        color: white;
+        color: #FCE8C3;
         font-weight: 500;
     }
     .dropdown-menu.fit-content {
@@ -722,7 +731,7 @@ a {
     border-top: 1px solid rgba(255, 255, 255, 0.2); /* Top border for the first item */
 }
 .accordion-button:after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FCE8C3'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 .accordion-button:focus{
     box-shadow: none;
@@ -741,4 +750,17 @@ a {
 .accordion-item:last-of-type{
     border-bottom-right-radius:0;
     border-bottom-left-radius:0;  
+}
+
+#seeMoreBtn{
+color:#FCE8C3;
+border:none;
+}
+
+
+.carousel-item img {
+    height: 100%; /* Make sure image takes full height of carousel item */
+    object-fit: cover; /* Cover the container while preserving aspect ratio */
+    border-radius: 20px; /* Rounded borders */
+    width: 100%; /* Make sure the image fits the width of the carousel item */
 }

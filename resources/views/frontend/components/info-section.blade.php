@@ -1,29 +1,29 @@
 <section class="align-items-center d-flex flex-column justify-content-center text-center mb-5" id="info-section">
     <div class="align-items-center d-flex flex-column justify-content-center text-center col-10">
-        <h1 class="display-5 fw-bold mb-5">Informații despre Conferința din acest an</h1>
+        <h1 class="display-5 fw-bold mb-5">{{ __('info_about_this_year') }}</h1>
         <ul class="d-flex gap-6 list-unstyled">
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#guest-section">
                     <i class="ph ph-users"></i>
-                    <h6>INVITAȚI</h6>
+                    <h6>{{ __('Guests') }}</h6>
                 </a>
             </li>
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#tematic-section">
                     <i class="ph ph-book-open"></i>
-                    <h6>TEMATICĂ</h6>
+                    <h6>{{ __('Theme') }}</h6>
                 </a>
             </li>
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#location-section">
                     <i class="ph ph-map-pin"></i>
-                    <h6>LOCAȚIE</h6>
+                    <h6>{{ __('LocationLandingPage') }}</h6>
                 </a>
             </li>
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#days-section">
                     <i class="ph ph-calendar-blank"></i>
-                    <h6>DATĂ</h6>
+                    <h6>{{ __('Date') }}</h6>
                 </a>
             </li>
         </ul>
@@ -40,19 +40,44 @@
                 <div class="position-relative container-wrapper">
                     <div class="card position-absolute behind top-left w-100 h-100"></div>
                     <div class="card position-absolute behind bottom-right  w-25 h-75"></div>
-                    <div class="card position-relative main-img w-100"></div>
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators ">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                        </div>
+                        <div class="carousel-inner rounded-5">
+                            <div class="carousel-item active carousel-img">
+                                <img src="{{ Vite::asset('resources/images/luigi.png') }}" class="d-block w-100 rounded"
+                                    alt="Image 1">
+                            </div>
+                            <div class="carousel-item carousel-img">
+                                <img src="{{ Vite::asset('resources/images/nelu.png') }}" class="d-block w-100 rounded"
+                                    alt="Image 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">{{ __('Previous') }}</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">{{ __('Next') }}</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-lg-6 text-start">
-                <div class="mb-3 accent-text">INVITAȚI</div>
+                <div class="mb-3 accent-text">{{ __('Guests') }}</div>
                 <div>
-                    <h1 class="fw-bold mb-4">Invitați Speciali</h1>
+                    <h1 class="fw-bold mb-4">{{ __('Special_Guests') }}</h1>
                 </div>
                 <div>
-                    <span class="paragraph-regular-20">La Conferința Europeană de Tineret și Familii ediția 2024, vom
-                        avea ca invitați speciali pe pastorul Luigi Mițoi, pe care l-am
-                        cunoscut deja în alte ediții și pe pastorul Nelu Filip, președintele Cultului Penticostal din
-                        România.
+                    <span class="paragraph-regular-20">{{ __('Special_Guests_Paragraph') }}
                     </span>
                 </div>
             </div>
@@ -70,15 +95,11 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 text-start order-2 order-lg-1 text-start text-lg-end mb-5">
-                <div class="mb-3 accent-text">TEMATICĂ</div>
+                <div class="mb-3 accent-text">{{ __('Theme') }}</div>
                 <div>
-                    <h1 class="fw-bold mb-4">Tematica acestui an</h1>
+                    <h1 class="fw-bold mb-4">{{ __('This_year_theme') }}</h1>
                 </div>
-                <div><span class="paragraph-regular-20">Tematica din acest an va fi IMPLICAREA. Vom avea
-                        prezentări dedicate acestui subiect atât de actual și important pentru tineri. Ne dorim ca orice
-                        tânăr, indiferent de vârstă, să fie implicat activ și pozitiv în lucrarea lui Dumnezeu din
-                        biserica locală.<br><br>Vom avea și întâlniri de rugăciune în care tinerii să poată beneficia de
-                        umplerea Duhului Sfânt pentru o deplină implicare în lucrarea de slujire a bisericii.
+                <div><span class="paragraph-regular-20">{{ __('Theme_paragraph') }}
                     </span></div>
             </div>
 
@@ -96,14 +117,12 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 text-start">
-                <div class="mb-3 accent-text">LOCAȚIE</div>
+                <div class="mb-3 accent-text">{{ __('LocationLandingPage') }}</div>
                 <div>
-                    <h1 class="fw-bold mb-4">Lignano Sabbiadoro</h1>
+                    <h1 class="fw-bold mb-4">{{ __('Lignano Sabbiadoro') }}</h1>
                 </div>
                 <div>
-                    <span class="paragraph-regular-20">La fel ca și anii trecuți, Conferința Europeană se va ține la
-                        "BELLA
-                        ITALIA EFA VILLAGE" în Lignano Sabbiadoro (UD), Italia.
+                    <span class="paragraph-regular-20">{{ __('Location_paragraph') }}
                     </span>
                 </div>
             </div>
@@ -114,8 +133,9 @@
             <div class="col-12 my-4">
                 <hr class="mb-5 w-100" />
             </div>
-            <img src="{{ Vite::asset('resources/images/radial-circle.svg') }}" alt="Logo" class="position-absolute w-75 left-radialBg" />
-            <div class="col-10 col-lg-5 mb-5 order-1 order-sm-2" >
+            <img src="{{ Vite::asset('resources/images/radial-circle.svg') }}" alt="Logo"
+                class="position-absolute w-75 left-radialBg" />
+            <div class="col-10 col-lg-5 mb-5 order-1 order-sm-2">
                 <div class="position-relative container-wrapper">
                     <div class="card position-absolute behind top-left w-100 h-100"></div>
                     <div class="card position-absolute behind bottom-right  w-25 h-75"></div>
@@ -139,13 +159,11 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 text-start order-2 order-sm-1 text-start text-lg-end mb-5">
-                <div class="mb-3 accent-text">DATA</div>
+                <div class="mb-3 accent-text">{{ __('Date') }}</div>
                 <div>
-                    <h1 class="fw-bold mb-4">DATA CONFERINȚEI</h1>
+                    <h1 class="fw-bold mb-4">{{ __('Conference_Date') }}</h1>
                 </div>
-                <div><span class="paragraph-regular-20">Conferința Europeană se va ține în perioada 1-3 NOIEMBRIE 2024.
-                        Vă așteptăm cu drag pentru a petrece momente memorabile
-                        impreună!</span></div>
+                <div><span class="paragraph-regular-20">{{ __('Conference_date_paragraph') }}</span></div>
             </div>
 
         </div>
@@ -164,8 +182,7 @@
 
                                 <div class="h-100 d-flex flex-column justify-content-between p-3">
                                     <span class="text-end text-terciary year-text">2019</span>
-                                    <span class="text-start program-text fw-bold">Problematica
-                                        dependențelor</span>
+                                    <span class="text-start program-text fw-bold">{{ __('dependencies_issues') }}</span>
                                 </div>
                                 <div class="card position-absolute behind bottom-right"></div>
                             </div>
@@ -177,7 +194,7 @@
                                 style="left:20px;">
                                 <div class="h-100 d-flex flex-column justify-content-between p-3">
                                     <span class="text-end text-terciary year-text">2021</span>
-                                    <span class="text-start program-text fw-bold">Biserica și tehnologia</span>
+                                    <span class="text-start program-text fw-bold">{{ __('Church_and_technology') }}</span>
                                 </div>
                                 <div class="card position-absolute behind bottom-left"></div>
                             </div>
@@ -190,7 +207,7 @@
                             class="card position-relative main-img third-program-img text-white d-flex justify-content-between">
                             <div class="h-100 d-flex flex-column justify-content-between p-3">
                                 <span class="text-end text-terciary year-text">2023</span>
-                                <span class="text-start program-text fw-bold">Crizele Vieții</span>
+                                <span class="text-start program-text fw-bold">{{ __('Life_crisis') }}</span>
                             </div>
                             <div class="card position-absolute behind top-left"></div>
                         </div>
@@ -198,14 +215,11 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4 text-start order-1 mb-5">
-                <div class="mb-3 accent-text">EDIȚII ANTERIOARE</div>
+                <div class="mb-3 accent-text">{{ __('Previous_editions') }}</div>
                 <div>
-                    <h1 class="fw-bold display-6 mb-4">Află Despre Conferințele anterioare</h1>
+                    <h1 class="fw-bold display-6 mb-4">{{ __('Discover_previous_editions') }}</h1>
                 </div>
-                <div><span class="paragraph-regular-20">Ești interesat să vezi cum s-au desfășurat edițiile anterioare?
-                        Accesează imaginile pentru a viziona <span class="text-decoration-underline">videourile
-                            live</span> din ani
-                        anteriori.</span></div>
+                <div><span class="paragraph-regular-20">{!! __('Previous_editions_paragraph') !!}</span></div>
             </div>
         </div>
     </div>
