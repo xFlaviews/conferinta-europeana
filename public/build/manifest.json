@@ -395,6 +395,10 @@
     "file": "assets/nelu-NPNZlgIm.png",
     "src": "resources/images/nelu.png"
   },
+  "resources/images/pricing.png": {
+    "file": "assets/pricing-CMvSFrFK.png",
+    "src": "resources/images/pricing.png"
+  },
   "resources/images/radial-circle.svg": {
     "file": "assets/radial-circle-BD5sESlT.svg",
     "src": "resources/images/radial-circle.svg"
@@ -676,12 +680,12 @@
     ]
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-4Aj0JNKc.css",
+    "file": "assets/app-CrkCMZN0.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   },
   "resources/sass/backend/app.scss": {
-    "file": "assets/app-DBYpChYS.css",
+    "file": "assets/app-CN4NSckj.css",
     "src": "resources/sass/backend/app.scss",
     "isEntry": true
   },

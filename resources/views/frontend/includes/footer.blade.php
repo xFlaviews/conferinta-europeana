@@ -25,7 +25,7 @@
                 <div class="mb-3">
                     <h5>{{ __('Contacts') }}</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#"
+                        <li class="nav-item mb-2"><a href="mailto:support@conferintaeuropeana.it"
                                 class="nav-link p-0 text-body-secondary">support@conferintaeuropeana.it</a></li>
                     </ul>
                 </div>
@@ -34,9 +34,9 @@
                 <div>
                     <h5>{{ __('social') }}</h5>
                     <ul class="nav flex-row gap-2">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i
+                        <li class="nav-item mb-2"><a href="https://www.instagram.com/conferinta.europeana/" class="nav-link p-0 text-body-secondary"><i
                                     class="ph ph-instagram-logo"></i></a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i
+                        <li class="nav-item mb-2"><a href="https://www.facebook.com/profile.php?id=61557319907849" class="nav-link p-0 text-body-secondary"><i
                                     class="ph ph-facebook-logo"></i></a></li>
                     </ul>
                 </div>

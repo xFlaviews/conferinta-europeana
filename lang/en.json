@@ -280,7 +280,7 @@
     "unsubscribe_after": "to proceed with the unsubscription",
     "You have successfully unsubscribed": "You have successfully unsubscribed",
     "You have successfully subscribed to the newsletter": "You have successfully subscribed to the newsletter",
-    "Days": "Days",
+    "Days": "Days Left",
     "Group Dashboard": "Group Dashboard",
     "Events": "Events",
     "Information": "Information",
@@ -323,7 +323,7 @@
     "Previous_editions_paragraph": "Interested in seeing how previous editions went? Click on the images to watch <span class=\"text-decoration-underline\">the live videos</span> of previous editions.",
     "Questions": "Questions",
     "General_questions": "General Questions",
-    "general_questions_paragraph": "If you have questions, you can find the answers here. If your question is not answered <a href=\"#\" class=\"text-decoration-underline\">write to us!</a>",
+    "general_questions_paragraph": "If you have questions, you can find the answers here. If your question is not answered <a href=\"mailto:support@conferintaeuropeana.it\" class=\"text-decoration-underline\">write to us!</a>",
     "isSignupRequired": "Is online registration mandatory?",
     "isSignupRequiredAnswer": "Yes. Your personal data will have to be entered at the hotel reception, along with the participant's contact details for future information about the event. If you are unable to register online, you can ask the church group registrar to do it for you.",
     "isOnlineSignupEnough": "Is online registration sufficient or is there more to do?",
@@ -361,5 +361,13 @@
     "Manage Rooms": "Manage Rooms",
     "Manage Guests": "Manage Guests",
     "Total": "Total",
-    "Rooms": "Rooms"
+    "Rooms": "Rooms",
+    "Prices":"Prices",
+    "accomodationPrices": "Accommodation Prices",
+    "accomodationPricesParagraph":"Price per person for two days:\n\n(Accommodation two nights, 2 breakfasts, 2 lunches, 2 dinners, access to the Conference Hall.)",
+    "stillMissing":"  ",
+    "1room": "In a room with one bed - 170 Euro/person (very limited availability)",
+    "2room": "In a room with two beds - 140 Euro/person",
+    "3room": "In a room with 3/4 beds - 130 Euro/person",
+    "5room": "In a room with 5/6 beds - 120 Euro/person"
 }

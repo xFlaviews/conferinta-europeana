@@ -26,6 +26,12 @@
                     <h6>{{ __('Date') }}</h6>
                 </a>
             </li>
+            <li class="mid-menu-item">
+                <a class="nav-link link-light d-flex gap-2" href="#prices-section">
+                    <i class="ph ph-coins"></i>
+                    <h6>{{ strtoupper(__('Prices')) }}</h6>
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -36,7 +42,7 @@
             </div>
             <img src="{{ Vite::asset('resources/images/radial-circle.svg') }}" alt="Radial Bg Image"
                 class="position-absolute w-75 left-radialBg" />
-            <div class="col-10 col-lg-5 mb-5">
+            <div class="col-10 col-lg-5 mb-5  align-content-center">
                 <div class="position-relative container-wrapper">
                     <div class="card position-absolute behind top-left w-100 h-100"></div>
                     <div class="card position-absolute behind bottom-right  w-25 h-75"></div>
@@ -87,7 +93,7 @@
             <div class="col-12 my-4">
                 <hr class="mb-5 w-100" />
             </div>
-            <div class="col-10 col-lg-5 mb-5 order-1 order-sm-2">
+            <div class="col-10 col-lg-5 mb-5  align-content-center order-1 order-sm-2">
                 <div class="position-relative container-wrapper">
                     <div class="card position-absolute behind top-left w-100 h-100"></div>
                     <div class="card position-absolute behind bottom-right  w-25 h-75"></div>
@@ -109,7 +115,7 @@
             <div class="col-12 my-4">
                 <hr class="mb-5 w-100" />
             </div>
-            <div class="col-10 col-lg-5 mb-5">
+            <div class="col-10 col-lg-5 mb-5  align-content-center">
                 <div class="position-relative container-wrapper">
                     <div class="card position-absolute behind top-left w-100 h-100"></div>
                     <div class="card position-absolute behind bottom-right w-25 h-75"></div>
@@ -135,13 +141,13 @@
             </div>
             <img src="{{ Vite::asset('resources/images/radial-circle.svg') }}" alt="Logo"
                 class="position-absolute w-75 left-radialBg" />
-            <div class="col-10 col-lg-5 mb-5 order-1 order-sm-2">
+            <div class="col-10 col-lg-5 mb-5  align-content-center order-1 order-sm-2">
                 <div class="position-relative container-wrapper">
                     <div class="card position-absolute behind top-left w-100 h-100"></div>
                     <div class="card position-absolute behind bottom-right  w-25 h-75"></div>
                     <div
                         class="card position-relative main-img days-img w-100 text-white d-flex justify-content-between">
-                        <h1 class="mt-2 mt-lg-4 counter-label">MAI LIPSESC</h1>
+                        <h1 class="mt-2 mt-lg-4 counter-label">{{ __('stillMissing') }}</h1>
                         @php
                             $today = today();
                             $event = new DateTime('2024-11-01');
@@ -168,6 +174,36 @@
 
         </div>
 
+        <div class="d-flex row px-0 px-md-5 justify-content-center justify-content-lg-between" id="prices-section">
+            <div class="col-12 my-4">
+                <hr class="mb-5 w-100" />
+            </div>
+            <div class="col-10 col-lg-5 mb-5 align-content-center">
+                <div class="position-relative container-wrapper">
+                    <div class="card position-absolute behind top-left w-100 h-100"></div>
+                    <div class="card position-absolute behind bottom-right w-25 h-75"></div>
+                    <div class="card position-relative main-img pricing-img w-100"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 text-start">
+                <div class="mb-3 accent-text">{{ __('Prices') }}</div>
+                <div>
+                    <h1 class="fw-bold mb-4">{{ __('accomodationPrices') }}</h1>
+                </div>
+                <div>
+                    <span class="paragraph-regular-20 pre-wrap">{{ __('accomodationPricesParagraph') }}
+                    </span>
+                    <ul class="room-prices">
+                        <li>{{ __('1room') }}</li>
+                        <li>{{ __('2room') }}</li>
+                        <li>{{ __('3room') }}</li>
+                        <li>{{ __('5room') }}</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
         <div class="d-flex row px-0 px-md-0 justify-content-center justify-content-lg-between">
             <div class="col-12 my-4">
                 <hr class="mb-5 w-100" />
@@ -182,7 +218,8 @@
 
                                 <div class="h-100 d-flex flex-column justify-content-between p-3">
                                     <span class="text-end text-terciary year-text">2019</span>
-                                    <span class="text-start program-text fw-bold">{{ __('dependencies_issues') }}</span>
+                                    <span
+                                        class="text-start program-text fw-bold">{{ __('dependencies_issues') }}</span>
                                 </div>
                                 <div class="card position-absolute behind bottom-right"></div>
                             </div>
@@ -194,7 +231,8 @@
                                 style="left:20px;">
                                 <div class="h-100 d-flex flex-column justify-content-between p-3">
                                     <span class="text-end text-terciary year-text">2021</span>
-                                    <span class="text-start program-text fw-bold">{{ __('Church_and_technology') }}</span>
+                                    <span
+                                        class="text-start program-text fw-bold">{{ __('Church_and_technology') }}</span>
                                 </div>
                                 <div class="card position-absolute behind bottom-left"></div>
                             </div>

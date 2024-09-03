@@ -280,7 +280,7 @@
     "unsubscribe_after": "per procedere alla cancellazione dell'iscrizione",
     "You have successfully unsubscribed": "La disiscrizione è avvenuta con successo",
     "You have successfully subscribed to the newsletter": "L'iscrizione alla newsletter è avvenuta con successo",
-    "Days": "Giorni",
+    "Days": "Giorni Rimasti",
     "Group Dashboard": "Dashboard Gruppo",
     "Events": "Eventi",
     "In this section you can associate this group with other events": "In questa sezione potete associare gli eventi a cui partecipare per questo gruppo",
@@ -298,7 +298,7 @@
     "Date": "Data",
     "Faq": "Faq",
     "European_conference": "Conferenza Europea",
-    "European_conference_subtitle": "Per Giovani e famiglie",
+    "European_conference_subtitle": "Per Giovani e Famiglie",
     "be_updated": "Tenetevi aggiornati su tutte le novità della Conferenza 2024",
     "keep_me_updated": "Tienimi aggiornato",
     "mail_placeholder": "nome@mail.com",
@@ -359,5 +359,13 @@
     "Manage Rooms": "Gestisci Camere",
     "Manage Guests": "Gestisci Ospiti",
     "Total": "Totale",
-    "Rooms": "Camere"
+    "Rooms": "Camere",
+    "Prices":"Prezzi",
+    "accomodationPrices": "Prezzi dell'alloggio",
+    "accomodationPricesParagraph":"Prezzo per persona per due giorni:\n\n(Pernottamento due notti, 2 colazioni, 2 pranzi, 2 cene, accesso alla Sala Convegni.)",
+    "stillMissing":"  ",
+    "1room": "In una stanza con un letto - 170 Euro/persona (disponibilità molto limitata)",
+    "2room": "In una stanza con due letti - 140 Euro/persona",
+    "3room": "In una stanza con 3/4 letti - 130 Euro/persona",
+    "5room": "In una stanza con 5/6 letti - 120 Euro/persona"
 }

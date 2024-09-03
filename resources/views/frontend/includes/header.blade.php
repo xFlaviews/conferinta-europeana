@@ -22,14 +22,9 @@
                         </p>
                     </div>
                 </a>
-                <button 
-                    class="navbar-toggler nvabar-button-no-shadow collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#main_nav"
-                    aria-expanded="false"
-                    id="navbar-toggler-button"
-                >
+                <button class="navbar-toggler nvabar-button-no-shadow collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false"
+                    id="navbar-toggler-button">
                     <span class="navbar-toggler-icon text-white"></span>
                 </button>
             </div>
@@ -39,7 +34,7 @@
             <div class="navbar-collapse collapse" id="main_nav">
                 <ul class="navbar-nav ms-auto d-flex gap-4">
                     <!-- Navigation items -->
-                    <li class="nav-item dropdown uppercase" id="informatii">
+                    <li class="nav-item dropdown" id="informatii">
                         <a class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no bottom-border "
                             href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="ph ph-book-open"></i>{{ __('Info') }}<i class="ph ph-caret-down"></i>
@@ -61,6 +56,9 @@
                             <li><a class="dropdown-item" href="#days-section"><img
                                         src="{{ Vite::asset('resources/images/double-chevron.svg') }}" alt="Logo"
                                         class="me-2 align-text-top mobile-only">{{ __('Date') }}</a></li>
+                            <li><a class="dropdown-item" href="#prices-section"><img
+                                        src="{{ Vite::asset('resources/images/double-chevron.svg') }}" alt="Logo"
+                                        class="me-2 align-text-top mobile-only">{{ __('Prices') }}</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" id="contacte">

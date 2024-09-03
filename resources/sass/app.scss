@@ -380,6 +380,9 @@ h6 {
 .location-img {
     background-image: url("../images/locatie.png");
 }
+.pricing-img{
+    background-image: url("../images/pricing.png");
+}
 .days-img {
     background-image: url("../images/days.png");
 }
@@ -767,4 +770,12 @@ border:none;
 
 .uppercase {
     text-transform: uppercase !important;
+}
+.pre-wrap{
+    white-space: pre-wrap;
+}
+.room-prices{
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.8);
 }
