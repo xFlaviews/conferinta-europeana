@@ -356,5 +356,10 @@
     "copyright": "Copyright © 2024",
     "Terms&Conditions": "Terms and Conditions",
     "PrivacyPolicy": "Privacy Policy",
-    "Info": "Info"
+    "Info": "Info",
+    "Add Rooms": "Add Rooms",
+    "Manage Rooms": "Manage Rooms",
+    "Manage Guests": "Manage Guests",
+    "Total": "Total",
+    "Rooms": "Rooms"
 }

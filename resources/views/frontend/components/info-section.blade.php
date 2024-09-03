@@ -1,29 +1,29 @@
 <section class="align-items-center d-flex flex-column justify-content-center text-center mb-5" id="info-section">
     <div class="align-items-center d-flex flex-column justify-content-center text-center col-10">
         <h1 class="display-5 fw-bold mb-5">{{ __('info_about_this_year') }}</h1>
-        <ul class="d-flex gap-6 list-unstyled">
+        <ul class="d-flex gap-6 list-unstyled uppercase">
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#guest-section">
                     <i class="ph ph-users"></i>
-                    <h6>{{ strtoupper(__('Guests')) }}</h6>
+                    <h6>{{ __('Guests') }}</h6>
                 </a>
             </li>
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#tematic-section">
                     <i class="ph ph-book-open"></i>
-                    <h6>{{ strtoupper(__('Topic')) }}</h6>
+                    <h6>{{ __('Topic') }}</h6>
                 </a>
             </li>
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#location-section">
                     <i class="ph ph-map-pin"></i>
-                    <h6>{{ strtoupper(__('LocationLandingPage')) }}</h6>
+                    <h6>{{ __('LocationLandingPage') }}</h6>
                 </a>
             </li>
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#days-section">
                     <i class="ph ph-calendar-blank"></i>
-                    <h6>{{ strtoupper(__('Date')) }}</h6>
+                    <h6>{{ __('Date') }}</h6>
                 </a>
             </li>
         </ul>
@@ -154,7 +154,7 @@
                         <h1 class="display-1 fw-semibold counter-text">
                             {{ $days }}
                         </h1>
-                        <h1 class="mb-2 mb-lg-4 counter-label">{{ strtoupper(__('Days')) }}</h1>
+                        <h1 class="mb-2 mb-lg-4 counter-label uppercase">{{ __('Days') }}</h1>
                     </div>
                 </div>
             </div>

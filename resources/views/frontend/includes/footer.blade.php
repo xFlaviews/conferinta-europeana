@@ -3,21 +3,21 @@
         <div class="d-flex h-100 logo-section col-auto mb-4 ">
             <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="Logo"
                 class="d-inline-block align-text-top logo" />
-            <div class="ms-2 navbar-logo-text d-flex justify-content-center flex-column">
-              <p class="mb-0">
-                            @if (app()->getLocale() != 'en')
-                                 {{ strtoupper(__('Conference')) }}
-                            @else
-                                {{ strtoupper(__('European')) }}
-                            @endif
-                        </p>
-                        <p class="mb-0">
-                            @if (app()->getLocale() == 'en')
-                                {{ strtoupper(__('Conference')) }}
-                            @else
-                                {{ strtoupper(__('European')) }}
-                            @endif
-                        </p>
+            <div class="ms-2 navbar-logo-text d-flex justify-content-center flex-column uppercase">
+                <p class="mb-0">
+                    @if (app()->getLocale() != 'en')
+                            {{ __('Conference') }}
+                    @else
+                        {{ __('European') }}
+                    @endif
+                </p>
+                <p class="mb-0">
+                    @if (app()->getLocale() == 'en')
+                        {{ __('Conference') }}
+                    @else
+                        {{ __('European') }}
+                    @endif
+                </p>
             </div>
         </div>
         <div class="footer-right-section d-flex gap-3 col-auto row">

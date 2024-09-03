@@ -5,19 +5,19 @@
                 <a class="navbar-brand d-flex active" href="#newsletter-section">
                     <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="Logo"
                         class="d-inline-block align-text-top logo">
-                    <div class="ms-2 my-auto text-white navbar-logo-text">
+                    <div class="ms-2 my-auto text-white navbar-logo-text uppercase">
                         <p class="mb-0">
                             @if (app()->getLocale() != 'en')
-                                {{ strtoupper(__('Conference')) }}
+                                {{ __('Conference') }}
                             @else
-                                {{ strtoupper(__('European')) }}
+                                {{ __('European') }}
                             @endif
                         </p>
                         <p class="mb-0">
                             @if (app()->getLocale() == 'en')
-                                {{ strtoupper(__('Conference')) }}
+                                {{ __('Conference') }}
                             @else
-                                {{ strtoupper(__('European')) }}
+                                {{ __('European') }}
                             @endif
                         </p>
                     </div>
