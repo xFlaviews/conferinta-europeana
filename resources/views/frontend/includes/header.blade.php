@@ -42,7 +42,7 @@
                     <li class="nav-item dropdown uppercase" id="informatii">
                         <a class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no bottom-border "
                             href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="ph ph-book-open"></i>{{ __('Information') }}<i class="ph ph-caret-down"></i>
+                            <i class="ph ph-book-open"></i>{{ __('Info') }}<i class="ph ph-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-bg dropdown-mobile">
                             <li><a class="dropdown-item align-text-top d-flex justify-content-start align-items-start bottom_border"
