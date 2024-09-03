@@ -5,25 +5,25 @@
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#guest-section">
                     <i class="ph ph-users"></i>
-                    <h6>{{ __('Guests') }}</h6>
+                    <h6>{{ strtoupper(__('Guests')) }}</h6>
                 </a>
             </li>
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#tematic-section">
                     <i class="ph ph-book-open"></i>
-                    <h6>{{ __('Theme') }}</h6>
+                    <h6>{{ strtoupper(__('Topic')) }}</h6>
                 </a>
             </li>
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#location-section">
                     <i class="ph ph-map-pin"></i>
-                    <h6>{{ __('LocationLandingPage') }}</h6>
+                    <h6>{{ strtoupper(__('LocationLandingPage')) }}</h6>
                 </a>
             </li>
             <li class="mid-menu-item">
                 <a class="nav-link link-light d-flex gap-2" href="#days-section">
                     <i class="ph ph-calendar-blank"></i>
-                    <h6>{{ __('Date') }}</h6>
+                    <h6>{{ strtoupper(__('Date')) }}</h6>
                 </a>
             </li>
         </ul>
@@ -74,7 +74,7 @@
             <div class="col-12 col-lg-6 text-start">
                 <div class="mb-3 accent-text">{{ __('Guests') }}</div>
                 <div>
-                    <h1 class="fw-bold mb-4">{{ __('Special_Guests') }}</h1>
+                    <h1 class="fw-bold mb-4">{{ __('Special Guests') }}</h1>
                 </div>
                 <div>
                     <span class="paragraph-regular-20">{{ __('Special_Guests_Paragraph') }}
@@ -95,9 +95,9 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 text-start order-2 order-lg-1 text-start text-lg-end mb-5">
-                <div class="mb-3 accent-text">{{ __('Theme') }}</div>
+                <div class="mb-3 accent-text">{{ __('Topic') }}</div>
                 <div>
-                    <h1 class="fw-bold mb-4">{{ __('This_year_theme') }}</h1>
+                    <h1 class="fw-bold mb-4">{{ __('This_year_topic') }}</h1>
                 </div>
                 <div><span class="paragraph-regular-20">{{ __('Theme_paragraph') }}
                     </span></div>

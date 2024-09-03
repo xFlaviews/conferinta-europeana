@@ -1,5 +1,5 @@
 <header>
-    <nav class="autohide navbar navbar-expand-lg pt-0 navbar-background initial-top menu-opened">
+    <nav class="autohide navbar navbar-expand-lg pt-0 navbar-background initial-top">
         <div class="container-fluid">
             <div class="d-row d-flex justify-content-between">
                 <a class="navbar-brand d-flex active" href="#newsletter-section">
@@ -8,7 +8,7 @@
                     <div class="ms-2 my-auto text-white navbar-logo-text">
                         <p class="mb-0">
                             @if (app()->getLocale() != 'en')
-                                 {{ strtoupper(__('Conference')) }}
+                                {{ strtoupper(__('Conference')) }}
                             @else
                                 {{ strtoupper(__('European')) }}
                             @endif
@@ -22,21 +22,27 @@
                         </p>
                     </div>
                 </a>
-                <button class="navbar-toggler nvabar-button-no-shadow" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#main_nav" aria-expanded="true">
+                <button 
+                    class="navbar-toggler nvabar-button-no-shadow collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#main_nav"
+                    aria-expanded="false"
+                    id="navbar-toggler-button"
+                >
                     <span class="navbar-toggler-icon text-white"></span>
                 </button>
             </div>
             <!-- Divider -->
             <div class="divider"></div>
 
-            <div class="navbar-collapse collapse show" id="main_nav">
+            <div class="navbar-collapse collapse" id="main_nav">
                 <ul class="navbar-nav ms-auto d-flex gap-4">
                     <!-- Navigation items -->
-                    <li class="nav-item dropdown" id="informatii">
-                        <a class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no bottom-border"
+                    <li class="nav-item dropdown uppercase" id="informatii">
+                        <a class="nav-link d-flex gap-2 link-light dropdown-toggle dropdown-toggle-no bottom-border "
                             href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="ph ph-book-open"></i>{{ __('Informatii') }}<i class="ph ph-caret-down"></i>
+                            <i class="ph ph-book-open"></i>{{ __('Information') }}<i class="ph ph-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-bg dropdown-mobile">
                             <li><a class="dropdown-item align-text-top d-flex justify-content-start align-items-start bottom_border"
@@ -46,7 +52,7 @@
                             <li><a class="dropdown-item align-text-top d-flex justify-content-start align-items-start bottom_border"
                                     href="#tematic-section"><img
                                         src="{{ Vite::asset('resources/images/double-chevron.svg') }}" alt="Logo"
-                                        class="me-2 align-text-top mobile-only">{{ __('Theme') }}</a></li>
+                                        class="me-2 align-text-top mobile-only">{{ __('Topic') }}</a></li>
                             <li><a class="dropdown-item align-text-top d-flex justify-content-start align-items-start bottom_border"
                                     href="#location-section"><img
                                         src="{{ Vite::asset('resources/images/double-chevron.svg') }}" alt="Logo"

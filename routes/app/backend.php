@@ -10,7 +10,7 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
 
     Route::get('/dashboard', function () {
         return view('backend.index');
-    })->middleware(['auth', 'verified','role:admin,super_admin'])->name('dashboard');
+    })->middleware(['auth', 'verified','role:admin|super_admin'])->name('dashboard');
 
     Route::get('/', function () {
         return view('backend.index');
@@ -63,6 +63,8 @@ Route::group(['prefix' => 'admin', 'as' => 'backend.'], function () {
             Route::post('/{group}/update',[GroupController::class, 'update'])->middleware('can:group.update')->name('update');
             
             //Route::post('/{group}/delete',[GroupController::class, 'delete'])->middleware('can:group.delete')->name('delete');
+
+            Route::post('/{group}/associate-event',[GroupController::class, 'associateEvent'])->name('associate_event');
             
         });
 

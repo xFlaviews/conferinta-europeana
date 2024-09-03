@@ -11,14 +11,14 @@
     <a href="{{ route('backend.index') }}" class="logo-box">
         <!-- Light Brand Logo -->
         <div class="logo-light">
-            <img src="{{ Vite::asset('resources/images/backend/logo-light.png') }}" class="logo-lg h-6" alt="Light logo">
-            <img src="{{ Vite::asset('resources/images/backend/logo-sm.png') }}" class="logo-sm" alt="Small logo">
+            <img src="{{ Vite::asset('resources/images/logo.svg') }}" class="logo-lg h-6" alt="Light logo">
+            <img src="{{ Vite::asset('resources/images/logo.svg') }}" class="logo-sm" alt="Small logo">
         </div>
 
         <!-- Dark Brand Logo -->
         <div class="logo-dark">
-            <img src="{{ Vite::asset('resources/images/backend/logo-dark.png') }}" class="logo-lg h-6" alt="Dark logo">
-            <img src="{{ Vite::asset('resources/images/backend/logo-sm.png') }}" class="logo-sm" alt="Small logo">
+            <img src="{{ Vite::asset('resources/images/logo.svg') }}" class="logo-lg logo-custom-light h-6" alt="Dark logo">
+            <img src="{{ Vite::asset('resources/images/logo.svg') }}" class="logo-sm logo-custom-light" alt="Small logo">
         </div>
     </a>
 

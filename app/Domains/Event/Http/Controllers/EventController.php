@@ -18,12 +18,13 @@ class EventController extends Controller
 
     public function save() {
        //dd('sad');
-        request()->validate([
-            'name' => ['required','string','max:255', 'unique:events']
+       $validatedData = request()->validate([
+            'name' => ['required','string','max:255', 'unique:events'],
+            'from_date' => ['required','date'],
+            'to_date' => ['required','date']
         ]);
-        Event::create([
-            'name' => request('name')
-        ]);
+        //dd($validatedData);
+        Event::create($validatedData);
 
         return redirect()->back();
     }
@@ -31,12 +32,16 @@ class EventController extends Controller
     public function update(Event $event) {
 
         request()->validate([
-            'name' => ['required','string','max:255', Rule::unique('events','name')->ignore($event->id)]
+            'name' => ['required','string','max:255', Rule::unique('events','name')->ignore($event->id)],
+            'from_date' => ['required','date'],
+            'to_date' => ['required','date']
         ]);
 
         
         $event->update([
-            'name' => request('name')
+            'name' => request('name'),
+            'from_date' => ['required','date'],
+            'to_date' => ['required','date']
         ]);
         
 

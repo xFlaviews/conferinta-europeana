@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
+            $table->date('from_date');
+            $table->date('to_date');
             $table->timestamps();
         });
     }

@@ -10,8 +10,12 @@ class Event extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
+    
+    protected $fillable = [
+        'name', 'from_date', 'to_date'
+    ];
     # todo check if this work...
     public function groups() {
-        return $this->hasManyThrough(Group::class, 'group_rooms');
+        return $this->belongsToMany(Group::class, 'group_events', 'event_id', 'group_id');
     }
 }

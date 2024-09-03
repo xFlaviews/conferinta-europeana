@@ -12,6 +12,6 @@ class Group extends Model
     protected $guarded = ['id'];
 
     public function events() {
-        return $this->hasManyThrough(Event::class,'group_rooms');
+        return $this->belongsToMany(Event::class, 'group_events', 'group_id', 'event_id');
     }
 }

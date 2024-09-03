@@ -6,7 +6,7 @@
 ])
 
 @section('modals')
-    <div id="modal" class="hidden z-10 items-center justify-center h-screen w-screen fixed top-0 bg-black bg-opacity-60">
+    <div id="modal" class="hidden z-50 items-center justify-center h-screen w-screen fixed top-0 bg-black bg-opacity-60">
         <!--Modal Dialog -->
         <div class="bg-white max-w-4xl w-full rounded-md"> <!--Modal Content -->
             <div class="border-b border-b-gray-300 p-6"> <!--Modal Body -->
@@ -15,7 +15,15 @@
                     <div class="grid lg:grid-cols-3 gap-6 mb-3">
                         <div>
                             <label for="event-name" class="text-gray-800 text-sm font-medium inline-block mb-2">{{ __('Event Name') }}</label>
-                            <input type="text" id="event-name" class="form-input" name="name">
+                            <input type="text" id="event-name" class="form-input" name="name" required>
+                        </div>
+                        <div>
+                            <label for="from-date" class="text-gray-800 text-sm font-medium inline-block mb-2">{{ __('From Date') }}</label>
+                            <input class="form-input" id="from-date" type="date" name="from_date" required>
+                        </div>
+                        <div>
+                            <label for="to-date" class="text-gray-800 text-sm font-medium inline-block mb-2">{{ __('To Date') }}</label>
+                            <input class="form-input" id="to-date" type="date" name="to_date" required>
                         </div>
                     </div>
                     <button type="submit" class="btn border-primary text-primary hover:bg-primary hover:text-white">
@@ -55,6 +63,14 @@
                             </th>
                             <th scope="col"
                                 class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-gray-200">
+                                {{ __('From Date') }}
+                            </th>
+                            <th scope="col"
+                                class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-gray-200">
+                                {{ __('To Date') }}
+                            </th>
+                            <th scope="col"
+                                class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-gray-200">
                                 {{ __('Created at') }}
                             </th>
                             <th scope="col"
@@ -80,6 +96,14 @@
                                 <td
                                     class="whitespace-nowrap py-4 pe-3 text-sm font-medium text-gray-900 dark:text-gray-200">
                                     {{ $event->name }}
+                                </td>
+                                <td
+                                    class="whitespace-nowrap py-4 pe-3 text-sm font-medium text-gray-900 dark:text-gray-200">
+                                    {{ $event->from_date }}
+                                </td>
+                                <td
+                                    class="whitespace-nowrap py-4 pe-3 text-sm font-medium text-gray-900 dark:text-gray-200">
+                                    {{ $event->to_date }}
                                 </td>
                                 <td
                                     class="whitespace-nowrap py-4 pe-3 text-sm font-medium text-gray-900 dark:text-gray-200">
@@ -150,6 +174,8 @@
                 x.style.overflow = "hidden"; //Disable scroll on body
                 modalForm.action = content.editUrl
                 document.getElementById('event-name').value = content.name
+                document.getElementById('from-date').value = content.from_date
+                document.getElementById('to-date').value = content.to_date
             }
             if (modalType == 'create') {
                 modal.style.display = "flex"; // Show modal

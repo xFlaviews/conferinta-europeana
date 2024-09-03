@@ -6,7 +6,7 @@
 ])
 
 @section('modals')
-    <div id="modal" class="hidden z-10 items-center justify-center h-screen w-screen fixed top-0 bg-black bg-opacity-60">
+    <div id="modal" class="hidden z-50 items-center justify-center h-screen w-screen fixed top-0 bg-black bg-opacity-60">
         <!--Modal Dialog -->
         <div class="bg-white max-w-4xl w-full rounded-md"> <!--Modal Content -->
             <div class="border-b border-b-gray-300"> <!--Modal Body -->

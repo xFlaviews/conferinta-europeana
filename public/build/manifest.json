@@ -375,6 +375,10 @@
     "file": "assets/days-DQ2SuV9X.png",
     "src": "resources/images/days.png"
   },
+  "resources/images/double-chevron.svg": {
+    "file": "assets/double-chevron-C4Cgqj8B.svg",
+    "src": "resources/images/double-chevron.svg"
+  },
   "resources/images/locatie.png": {
     "file": "assets/locatie-Ct4CibiL.png",
     "src": "resources/images/locatie.png"
@@ -387,6 +391,10 @@
     "file": "assets/luigi-BS30TqHl.png",
     "src": "resources/images/luigi.png"
   },
+  "resources/images/nelu.png": {
+    "file": "assets/nelu-NPNZlgIm.png",
+    "src": "resources/images/nelu.png"
+  },
   "resources/images/radial-circle.svg": {
     "file": "assets/radial-circle-BD5sESlT.svg",
     "src": "resources/images/radial-circle.svg"
@@ -396,7 +404,7 @@
     "src": "resources/images/tematica.png"
   },
   "resources/js/app.js": {
-    "file": "assets/app-CMbyVZ3R.js",
+    "file": "assets/app-BiZnDA1X.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -668,12 +676,12 @@
     ]
   },
   "resources/sass/app.scss": {
-    "file": "assets/app-CfKSjaZ3.css",
+    "file": "assets/app-BCX6Qryv.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   },
   "resources/sass/backend/app.scss": {
-    "file": "assets/app-CVTtMAxz.css",
+    "file": "assets/app-CW7S4IRv.css",
     "src": "resources/sass/backend/app.scss",
     "isEntry": true
   },
