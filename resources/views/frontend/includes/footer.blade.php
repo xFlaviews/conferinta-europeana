@@ -1,4 +1,4 @@
-<footer class="c-footer py-5 h-auto vh-50 ">
+<footer class="c-footer py-5 h-auto vh-50 " id="contacts-section">
     <div class="d-flex footer-content justify-content-between row mb-5 gap-3">
         <div class="d-flex h-100 logo-section col-auto mb-4 ">
             <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="Logo"
@@ -34,10 +34,16 @@
                 <div>
                     <h5>{{ __('social') }}</h5>
                     <ul class="nav flex-row gap-2">
-                        <li class="nav-item mb-2"><a href="https://www.instagram.com/conferinta.europeana/" class="nav-link p-0 text-body-secondary"><i
-                                    class="ph ph-instagram-logo"></i></a></li>
-                        <li class="nav-item mb-2"><a href="https://www.facebook.com/profile.php?id=61557319907849" class="nav-link p-0 text-body-secondary"><i
-                                    class="ph ph-facebook-logo"></i></a></li>
+                        <li class="nav-item mb-2">
+                            <a href="https://www.instagram.com/conferinta.europeana/" class="nav-link p-0 text-body-secondary">
+                                <i class="ph ph-instagram-logo"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="https://www.facebook.com/profile.php?id=61557319907849" class="nav-link p-0 text-body-secondary">
+                                <i class="ph ph-facebook-logo"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -49,8 +55,8 @@
         </div>
         <div class="col-auto order-1 order-sm-2">
             <div class="d-flex gap-3 justify-content-sm-between justify-content-center">
-                <span class="text-regular-16 gray-text">{{ __('Terms&Conditions') }}</span>
-                <span class="text-regular-16 gray-text">{{ __('PrivacyPolicy') }}</span>
+                <a class="text-regular-16 gray-text" href="{{ route('cookie') }}">{{ __('Terms&Conditions') }}</a>
+                <a class="text-regular-16 gray-text" href="{{ route('privacy') }}">{{ __('PrivacyPolicy') }}</a>
             </div>
         </div>
     </div>

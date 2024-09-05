@@ -223,10 +223,10 @@ body {
 #faq {
     display: block !important;
 }
-#contacte {
+#contacts {
     display: none !important;
 }
-#informatii a {
+#info a {
     justify-content: space-between;
 }
 .navbar-toggler.nvabar-button-no-shadow {
@@ -254,7 +254,7 @@ body {
     #language {
         display: block !important;
     }
-    #contacte {
+    #contacts {
         display: block !important;
     }
 }
@@ -576,12 +576,7 @@ a {
         display: block;
     }
 }
-#locatie,
-#zilele,
-#invitati,
-#tematica {
-    scroll-margin-top: 100px;
-}
+
 .dropdown-bg {
     background: rgba(255, 255, 255, 0.2);
 }
@@ -778,4 +773,12 @@ border:none;
     font-size: 20px;
     line-height: 32px;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.mt-7 {
+    margin-top: 9rem;
 }

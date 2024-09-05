@@ -1,5 +1,5 @@
 <section id="faq-section">
-    <div class="container col-10 pb-1">
+    <div class="container col-10 pb-1 pt-5">
 
         <div class="faq-top row d-flex justify-content-between pt-5">
             <div class="left-section col-6">

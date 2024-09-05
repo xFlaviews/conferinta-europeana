@@ -9,7 +9,7 @@
                 </a>
             </li>
             <li class="mid-menu-item">
-                <a class="nav-link link-light d-flex gap-2" href="#tematic-section">
+                <a class="nav-link link-light d-flex gap-2" href="#topic-section">
                     <i class="ph ph-book-open"></i>
                     <h6>{{ __('Topic') }}</h6>
                 </a>
@@ -89,7 +89,7 @@
             </div>
         </div>
 
-        <div class="d-flex row px-0 px-md-5 justify-content-center justify-content-lg-between" id="tematic-section">
+        <div class="d-flex row px-0 px-md-5 justify-content-center justify-content-lg-between" id="topic-section">
             <div class="col-12 my-4">
                 <hr class="mb-5 w-100" />
             </div>
@@ -105,8 +105,11 @@
                 <div>
                     <h1 class="fw-bold mb-4">{{ __('This_year_topic') }}</h1>
                 </div>
-                <div><span class="paragraph-regular-20">{{ __('Theme_paragraph') }}
-                    </span></div>
+                <div>
+                    <span class="paragraph-regular-20">
+                        {{ __('Theme_paragraph') }}
+                    </span>
+                </div>
             </div>
 
         </div>

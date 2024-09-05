@@ -13,6 +13,14 @@ Route::middleware('auth')->group(function () {
     //Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/privacy-policy', function (){
+    return view('frontend.privacy-policy');
+})->name('privacy');
+
+Route::get('/cookie-policy', function (){
+    return view('frontend.cookie-policy');
+})->name('cookie');
+
 require __DIR__ . '/auth.php';
 require __DIR__ . '/app/frontend.php';
 require __DIR__ . '/app/backend.php';
