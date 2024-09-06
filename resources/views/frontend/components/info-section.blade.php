@@ -106,9 +106,7 @@
                     <h1 class="fw-bold mb-4">{{ __('This_year_topic') }}</h1>
                 </div>
                 <div>
-                    <span class="paragraph-regular-20">
-                        {{ __('Theme_paragraph') }}
-                    </span>
+                    <span class="paragraph-regular-20 pre-wrap">{{ __('Theme_paragraph') }}</span>
                 </div>
             </div>
 
@@ -172,7 +170,7 @@
                 <div>
                     <h1 class="fw-bold mb-4">{{ __('Conference_Date') }}</h1>
                 </div>
-                <div><span class="paragraph-regular-20">{{ __('Conference_date_paragraph') }}</span></div>
+                <div><span class="paragraph-regular-20 pre-wrap">{{ __('Conference_date_paragraph') }}</span></div>
             </div>
 
         </div>
@@ -196,13 +194,18 @@
                 <div>
                     <span class="paragraph-regular-20 pre-wrap">{{ __('accomodationPricesParagraph') }}
                     </span>
-                    <ul class="room-prices">
+                    <ul class="room-prices mb-4">
                         <li>{{ __('1room') }}</li>
                         <li>{{ __('2room') }}</li>
                         <li>{{ __('3room') }}</li>
                         <li>{{ __('5room') }}</li>
                     </ul>
-
+                    <span class="paragraph-regular-20 pre-wrap">{{ __('extraPricing') }}</span>
+                    <ul class="room-prices mt-4 mb-4">
+                        <li>{{ __('extraPricingOptionWithFood') }}</li>
+                        <li>{{ __('extraPricingOptionWithoutFood') }}</li>
+                    </ul>
+                    <span class="paragraph-regular-20 pre-wrap">{{ __('extraPricingExtraInfo') }}</span>
                 </div>
             </div>
         </div>

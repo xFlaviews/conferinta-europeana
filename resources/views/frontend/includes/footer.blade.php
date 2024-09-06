@@ -6,7 +6,7 @@
             <div class="ms-2 navbar-logo-text d-flex justify-content-center flex-column uppercase">
                 <p class="mb-0">
                     @if (app()->getLocale() != 'en')
-                            {{ __('Conference') }}
+                        {{ __('Conference') }}
                     @else
                         {{ __('European') }}
                     @endif
@@ -20,13 +20,15 @@
                 </p>
             </div>
         </div>
-        <div class="footer-right-section d-flex gap-3 col-auto row">
+        <div class="footer-right-section d-flex gap-3 col-auto row" id="contacts-section">
             <div class="col-auto">
                 <div class="mb-3">
                     <h5>{{ __('Contacts') }}</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="mailto:support@conferintaeuropeana.it"
-                                class="nav-link p-0 text-body-secondary">support@conferintaeuropeana.it</a></li>
+                                class="nav-link p-0 text-body-secondary d-flex"><i class="ph ph-envelope me-2"></i>support@conferintaeuropeana.it</a></li>
+                        <li class="nav-item mb-2"><a href="tel:+393806397797"
+                                class="nav-link p-0 text-body-secondary d-flex"><i class="ph ph-phone me-2"></i>3806397797</a></li>
                     </ul>
                 </div>
             </div>
